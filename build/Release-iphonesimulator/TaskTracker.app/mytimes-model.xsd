@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+	targetNamespace="mytimes" version="1.0"
+	xmlns:tns="mytimes" elementFormDefault="qualified">
+
+
+    <complexType name="Project">
+    	<sequence>
+    		<element name="Task" type="tns:Task" maxOccurs="unbounded" minOccurs="0"></element>
+    	</sequence>
+    	<attribute name="name" type="string" use="required"></attribute>
+    	<attribute name="description" type="string" use="optional"></attribute>
+    </complexType>
+
+    <complexType name="Task">
+    	<sequence>
+            <element name="WorkUnit" type="tns:WorkUnit" minOccurs="0" maxOccurs="unbounded"></element>
+        </sequence>
+    	<attribute name="name" type="string" use="required"></attribute>
+    	<attribute name="description" type="string" use="optional"></attribute>
+    </complexType>
+
+    <complexType name="WorkUnit">
+    	<attribute name="description" type="string" use="optional"></attribute>
+    	<attribute name="startTime" type="dateTime" use="required"></attribute>
+    	<attribute name="duration" type="int" use="required"></attribute>
+    	<attribute name="pause" type="int" use="required"></attribute>
+    	<attribute name="running" type="boolean" use="required"></attribute>
+    	<attribute name="chargeable" type="boolean" use="required"></attribute>
+    </complexType>
+
+
+    <element name="Data" type="tns:Data"></element>
+
+    <complexType name="Data">
+    	<sequence>
+    		<element name="Project" type="tns:Project" minOccurs="0" maxOccurs="unbounded"></element>
+    	</sequence>
+    </complexType>
+</schema>

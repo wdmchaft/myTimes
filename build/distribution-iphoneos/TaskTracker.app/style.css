@@ -1,0 +1,36 @@
+body {
+    color: black; background-color: white;
+    font-size: 100.0%;
+    font-family: Helvetica,Arial,sans-serif;
+  }
+
+
+
+  div#Seite {
+    text-align: left;    /* Seiteninhalt wieder links ausrichten */
+    margin: 0 auto;      /* standardkonforme horizontale Zentrierung */
+    width: 100%;
+    padding: 0.5em;
+  }
+  
+  div#beschreibung {
+  	text-align : justify;
+  }
+
+  div#Inhalt {
+    margin-left: 0.3em;
+    padding: 0 0.3em;
+  }
+
+  div#Inhalt h1 {
+    font-size: 2.5em;
+    margin: 0 0 1em;
+  }
+  div#Inhalt h2 {
+    font-size: 1.2em;
+    margin: 0 0 1em;
+  }
+  div#Inhalt p {
+    font-size:1em;
+    margin: 1em 0;
+  }

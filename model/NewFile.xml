@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Data xmlns="mytimes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="mytimes mytimes-model.xsd ">
+  <Project description="" editable="true" name="test projekt">
+    <Task description="" editable="true" name="Teilprojekt">
+      <WorkUnit chargeable="true" description="" duration="0" pause="0" running="true" startTime="2001-12-31T12:00:00"/>
+      <Attributes>
+        <Attribute>
+          <key>key</key>
+          <datatype>boolean</datatype>
+          <value>true</value>
+        </Attribute>
+      </Attributes>
+    </Task>
+  </Project>
+</Data>

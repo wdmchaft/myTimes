@@ -1,0 +1,29 @@
+﻿/* A single strings file, whose title is specified in your preferences schema. The strings files provide the localized content to display to the user for each of your preferences. */
+
+"myTimes" = "myTimes";
+"onStartup" = "On startup";
+"switchToActiveProject" = "Switch to active item";
+"multipleActiveTasks" = "Multiple active tasks";
+"allowed" = "Allowed";
+
+"minutesInterval" = "Time interval";
+"minutesInterval.oneMin" = "1 minute";
+"minutesInterval.fiveMins" = "5 minutes";
+"minutesInterval.tenMins" = "10 minutes";
+"minutesInterval.fifteenMins" = "15 minutes";
+
+"miscellaneous" = "Miscellaneous";
+"defaultStartStopPauseValues" = "Use default times";
+"enabled" = "Enabled";
+"defaultStartTime" = "Begin (hh:mm)";
+"defaultEndTime" = "End (hh:mm)";
+"defaultPauseTime" = "Pause (min)";
+
+"defaultExportValues" = "Export presettings";
+"defaultExportEmailAdress" = "EMail";
+
+"defaultImportValues" = "Import presettings";
+"defaultImportUrl" = "URL";
+
+"askForCommentWhenStoppingEntry" = "When stopping time recording";
+"enterComment" = "Prompt for comment";

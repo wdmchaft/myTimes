@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:Data xmlns:tns="http://www.example.org/mytimes-model" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/mytimes-model mytimes-model.xsd ">
+  <tns:Project description="" name="p1">
+    <tns:Task description="" name="t1">
+      <tns:WorkUnit description="" duration="0" pause="0" startTime="2001-12-31T12:00:00"/>
+      
+    </tns:Task>
+  </tns:Project>
+  <tns:Project description="" name="p2">
+    <tns:Task description="" name="t2">
+      <tns:WorkUnit description="" duration="0" pause="0" startTime="2001-12-31T12:00:00"/>
+    </tns:Task>
+  </tns:Project>
+</tns:Data>

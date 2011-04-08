@@ -1,0 +1,69 @@
+-----------------------------------------------------------------------------------------------------------------------------
+1.4.2 (??.??.2009)
+
+new features:
+- Vorbelegen von Export EMail-Adresse und Import-URL mit default-Werten
+- Beim Import Wahl zwischen Daten hinzufügen(wie bisher) oder die alten Daten löschen, nach Import sind nur die neuen Daten vorhanden
+- Speichern der Daten bei Änderungen (nicht erst beim Beenden)
+- Projekt/Task nur editierbar wenn editable=TRUE (default = true)
+- Import/Export des editable Flags für Projekte und Unterprojekte
+- kleinere Verbesserung der Usability
+- kleinere Bugfixes
+
+- User defined default values for export mail adress and import URL
+- During import you can now choose if you want to import data as new projects (this is the behaviour until now) or if the existing projects should be deleted and replaced by the new projects.
+- Changes will be persisted when they changes (not only when exiting myTimes).
+- Some minor usability improvements.
+- Minor bugfixes.
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+1.4.1 (04.10.2009)
+
+bugs fixed:
+ - problem solved with the keyboard overlaying the XML import dialog
+new features:
+ - user can define customizable default start, end pause values used for new time entries (customization and activatiion of this feature in the myTimes settings)
+ - sorted time entries view (by start date-time in descending order)
+ - indexed time entries view to find a specific date entry faster 
+other requests:
+ - CSV Export: the end date and time of a time entry will be exported, not just the end time
+ - XML/CSV EMail export improved, uses the iPhone OS 3.0 Mail-Composer function
+ - Font size in project and sub project details mask increased
+ - start/stop button apearance and usability improved
+ 
+---
+
+The user can now define customizable default start, end pause values used for new time entries (customization and activatiion of this feature in the myTimes settings).
+Sorted time entries view (by start date-time in descending order).
+Indexed time entries view to find a specific date entry faster.
+CSV Export: the end date and time of a time entry will be exported, not just the end time
+XML/CSV EMail export improved: filterable export (project and date range), email attachments improved(iPhone OS 3).
+Font size in project and sub project details mask increased.
+Appearance and usability of start/stop button improved
+Some bugs fixed.
+
+---
+
+- Definierbare Vorbelegungen für Start, Ende und Pause Werte für neue Zeiteinträge. (Aktivierung und Konfiguration des Features in den iPhone Einstellungen unter myTimes)
+- Liste der Zeiteinträge nun absteigend nach Startzeit sortiert (neueste zuerst).
+- Indizierte Liste der Zeiteinträge für schnelle Navigation.
+- CSV Export: Es wird nun auch der Endzeitpunkt mit Datum für jeden Zeiteintrag mit exportiert.
+- XML/CSV eMial Export stark verbessert: Export ist nach Projekten und Zeitbereich filterbar. Versand als eMail Anhang verbessert (iPhone OS 3).
+- Schriftgröße beim Anlegen/Bearbeiten von Projekt/Teilprojekt vergrößert.
+- Usability des Start/Pause zum Starten/Stoppen der automatischen Zeiterfassung verbessert.
+- Einige Fehler behoben.
+ 
+ 
+
+Description:
+myTimes time/task tracking is an easy to use iPhone/iPod Touch application for project time tracking. The captured times are organized in a project-sub project structure. In addition to track the start and end time (duration) you can also track pause times and add a description for each task. The project and sub project lists displays the accumulated timess of its items. myTimes allows you to export your tracked times and the accumulations to an excel friedly CSV format via mail export.
+Features:
+* track of project task times
+* remarks for the single tasks/times
+* recording times using start/stop mechanism
+* track pause time
+* eMail CSV or XML export
+* XML import (e.g. for backup/restore)
+* available in german and english
+* calendar view 

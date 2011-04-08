@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="mytimes" version="1.1" xmlns:tns="mytimes"
+	elementFormDefault="qualified">
+
+	<element name="Data" type="tns:Data"></element>
+
+	<complexType name="Project">
+		<sequence>
+			<element name="Task" type="tns:Task" maxOccurs="unbounded"
+				minOccurs="0">
+			</element>
+		</sequence>
+		<attribute name="name" type="string" use="required"></attribute>
+		<attribute name="description" type="string" use="optional"></attribute>
+		<attribute name="editable" type="boolean" use="optional"></attribute>
+	</complexType>
+
+	<complexType name="Task">
+		<sequence>
+			<element name="WorkUnit" type="tns:WorkUnit" minOccurs="0"
+				maxOccurs="unbounded">
+			</element>
+			<element name="Attributes" type="tns:Attributes" minOccurs="0" maxOccurs="1" />
+		</sequence>
+		<attribute name="name" type="string" use="required"></attribute>
+		<attribute name="description" type="string" use="optional"></attribute>
+		<attribute name="editable" type="boolean" use="optional"></attribute>
+	</complexType>
+	
+	<complexType name="Attributes">
+		<sequence>
+			<element name="Attribute" type="tns:Attribute" minOccurs="0"	maxOccurs="unbounded" />
+		</sequence>
+	</complexType>
+
+	<complexType name="WorkUnit">
+		<attribute name="description" type="string" use="optional"></attribute>
+		<attribute name="startTime" type="dateTime" use="required"></attribute>
+		<attribute name="duration" type="int" use="required"></attribute>
+		<attribute name="pause" type="int" use="required"></attribute>
+		<attribute name="running" type="boolean" use="required"></attribute>
+		<attribute name="chargeable" type="boolean" use="required"></attribute>
+	</complexType>
+
+	<complexType name="Data">
+		<sequence>
+			<element name="Project" type="tns:Project" minOccurs="0"
+				maxOccurs="unbounded">
+			</element>
+		</sequence>
+	</complexType>
+
+	<complexType name="Attribute">
+		<sequence>
+			<element name="key" type="string" minOccurs="1"
+				maxOccurs="1" />
+			<element name="datatype" minOccurs="1" maxOccurs="1">
+				<simpleType>
+					<restriction base="string">
+						<enumeration value="string"></enumeration>
+						<enumeration value="int"></enumeration>
+						<enumeration value="long"></enumeration>
+						<enumeration value="boolean"></enumeration>
+						<enumeration value="date"></enumeration>
+						<enumeration value="float"></enumeration>
+						<enumeration value="double"></enumeration>
+					</restriction>
+				</simpleType>
+			</element>
+			<element name="value" type="anySimpleType"></element>
+		</sequence>
+	</complexType>
+</schema>
