@@ -58,7 +58,7 @@
 
 //default constructor
 - (id) init {
-	if (self = [super self]) {
+	if ((self = [super self])) {
 		self.description = @"";
 		duration = [NSNumber numberWithInt:7200]; //7200 soc = 2h
 		date = [NSDate date]; //today

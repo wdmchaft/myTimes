@@ -1,0 +1,30 @@
+//
+//  DataEntry.h
+//  TaskTracker
+//
+//  Created by Michael Anteboth on 29.12.09.
+//  Copyright 2009 __MyCompanyName__. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+typedef enum ValueType {
+	kString,
+	kInteger,
+	kBool,
+	kDouble
+} ValueType;
+
+@interface DataEntry : NSObject {
+	NSString* name;
+	NSString* displayText;
+	id* value;
+	int sortIndex;
+	ValueType type;
+	//nullable
+	//editabled
+	//...
+}
+
+
+@end

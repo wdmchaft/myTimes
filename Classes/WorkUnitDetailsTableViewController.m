@@ -371,7 +371,7 @@
 		static NSString *CellIdentifier = @"DeleteCell";		 
 		WorkUnitDetailsCellView *cell = (WorkUnitDetailsCellView*) [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
 		if (cell == nil) {
-			cell = [[[WorkUnitDetailsCellView alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier] autorelease];
+            cell = [[[WorkUnitDetailsCellView alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
 			cell.selectionStyle = UITableViewCellSelectionStyleBlue;
 		}
 		[cell addSubview:self.playPauseDeleteView];

@@ -172,10 +172,10 @@
     
 			UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
 			if (cell == nil) {
-				cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier] autorelease];
+				cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
 			}
 			//set text
-			cell.text = NSLocalizedString(@"export.label.options.csv", @"");
+			cell.textLabel.text = NSLocalizedString(@"export.label.options.csv", @"");
 			//add switch contrl
 			UISwitch* typeSwitch = [[UISwitch alloc] initWithFrame:CGRectMake(200, 8, 100, 30)];
 			typeSwitch.on = csvEnabled;
@@ -189,9 +189,9 @@
 			
 			UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
 			if (cell == nil) {
-				cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier] autorelease];
+				cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];                
 			}
-			cell.text = NSLocalizedString(@"export.label.options.xml", @"");
+			cell.textLabel.text = NSLocalizedString(@"export.label.options.xml", @"");
 			//add switch control
 			UISwitch* typeSwitch = [[UISwitch alloc] initWithFrame:CGRectMake(200, 8, 100, 30)];
 			typeSwitch.on = xmlEnabled;
@@ -208,10 +208,10 @@
 			
 			UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
 			if (cell == nil) {
-				cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier] autorelease];
+				cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];                
 			}
 			NSString* lblFormat = NSLocalizedString(@"export.label.options.startFormat", @"");
-			cell.text = [NSString stringWithFormat:lblFormat, [TimeUtils formatDate:startDate withFormatType:2]];
+			cell.textLabel.text = [NSString stringWithFormat:lblFormat, [TimeUtils formatDate:startDate withFormatType:2]];
 			return cell;
 		} else if (indexPath.row == 1) {
 			//Zeitbereich Ende
@@ -219,10 +219,10 @@
 			
 			UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
 			if (cell == nil) {
-				cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier] autorelease];
+				cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];                
 			}
 			NSString* lblFormat = NSLocalizedString(@"export.label.options.endFormat", @"");
-			cell.text = [NSString stringWithFormat:lblFormat, [TimeUtils formatDate:endDate withFormatType:2]];
+			cell.textLabel.text = [NSString stringWithFormat:lblFormat, [TimeUtils formatDate:endDate withFormatType:2]];
 			return cell;
 		}
 	} else if (indexPath.section == 2 && indexPath.row == 0) {
@@ -231,7 +231,7 @@
 		
 		UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
 		if (cell == nil) {
-			cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier] autorelease];
+			cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
 		}
 		NSMutableString* txt = [[NSMutableString alloc] init];
 		TaskTrackerAppDelegate* appDelegate = (TaskTrackerAppDelegate *)[[UIApplication sharedApplication] delegate];
@@ -262,7 +262,7 @@
 				}
 			}
 		}
-		cell.text = txt;
+		cell.textLabel.text = txt;
 		return cell;
 		
 	}

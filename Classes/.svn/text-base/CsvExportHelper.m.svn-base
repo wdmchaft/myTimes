@@ -1,0 +1,135 @@
+//
+//  CsvExportHelper.m
+//  TaskTracker
+//
+//  Created by Michael Anteboth on 23.01.09.
+//  Copyright 2009 __MyCompanyName__. All rights reserved.
+//
+
+#import "CsvExportHelper.h"
+#import "Project.h"
+#import "ProjectTask.h"
+#import "WorkUnit.h"
+
+@implementation CsvExportHelper
+
+
+/**
+ * export projects and its task with the tasks work units as CSV list
+ * Format looks like:
+ * Name
+ *    Date    Start   End    Pause  Duration(sum)
+ * -----------------------------------------------
+ * ProjektName						10:00h
+ *   TaskName						08:00h
+ *     20.01.2009 10:00 16:00 1:00  05:00
+ *     ....
+ *
+ */
++(NSString*) getCsvExportData:(NSArray*)projects {
+	
+	//init the dateformatter
+	NSDateFormatter *df = [[NSDateFormatter alloc] init];
+	[df setDateStyle:NSDateFormatterMediumStyle];
+	[df setTimeStyle:NSDateFormatterNoStyle];
+	
+	//init the time formatter
+	NSDateFormatter *tf = [[NSDateFormatter alloc] init];
+	[tf setDateStyle:NSDateFormatterNoStyle];
+	[tf setTimeStyle:NSDateFormatterShortStyle];
+	
+	NSDateFormatter *dtf = [[NSDateFormatter alloc] init];
+	[dtf setDateStyle:NSDateFormatterMediumStyle];
+	[dtf setTimeStyle:NSDateFormatterShortStyle];
+	
+	
+	//Title
+	NSString* title = NSLocalizedString(@"csvExport.title", @"");
+	//header
+	NSString* header = NSLocalizedString(@"csvExport.header", @"");
+	
+	//Mutable string for the CSV export
+	NSMutableString* s = [[NSMutableString alloc] initWithCapacity:100];
+	
+	//export each project
+	for (Project* p in projects) {
+		if (p.markedForExport) {
+			//total ammount of work of this projekt
+			float projectTotalAmmount = [[p totalAmmount] floatValue];
+			//description 
+			NSString* pDesc = p.description;
+			if (pDesc == nil) pDesc = @"";
+			else if ([pDesc compare:@"(null)"] == NSOrderedSame) pDesc = @"";
+			//print project name and total ammoung
+			[s appendFormat:@"%@;;;;;;%@;%@\r\n", p.name, [CsvExportHelper formatSeconds:projectTotalAmmount], pDesc];
+			
+			//now export each task
+			NSArray* tasks = p.tasks;
+			if (tasks != nil) {
+				for (ProjectTask* task in tasks) {
+					if (task.markedForExport) {
+						//total ammount of work of this task
+						float taskTotalAmmount = [[task totalAmmount] floatValue];
+						//description 
+						NSString* taskDesc = task.description;
+						if (taskDesc == nil) taskDesc = @"";
+						else if ([taskDesc compare:@"(null)"] == NSOrderedSame) taskDesc = @"";
+						//print task name and total ammoung
+						[s appendFormat:@";%@;;;;;%@;%@\r\n", task.name, [CsvExportHelper formatSeconds:taskTotalAmmount], taskDesc];
+					
+						//now export each workunit for this task
+						NSArray* workUnits = task.workUnits;
+						if (workUnits != nil) {
+							for (WorkUnit* wu in workUnits) {
+								if (wu.markedForExport) {
+									//date
+									NSString* date = [df stringFromDate:wu.date];
+									//begin
+									NSString* begin = [tf stringFromDate:wu.date];
+									//end
+									NSString* end = [dtf stringFromDate:[wu getEndDate]];
+									//pause
+									NSString* pause = [CsvExportHelper formatSeconds:[wu.pause floatValue]];
+									//duration
+									NSString* duration = [CsvExportHelper formatSeconds:[wu.duration floatValue]];
+									//description 
+									NSString* desc = wu.description;
+									if (desc == nil) desc = @"";
+									//format and append workunit string
+									[s appendFormat:@";;%@;%@;%@;%@;%@;%@\r\n", date, begin, end, pause, duration, desc];
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	NSString* export = [NSString stringWithFormat:@"%@\n\r%@\n\r%@", title, header, s ];
+	
+	[df release];
+	[tf release];
+	[s release];
+	
+	return export;
+}
+
+
+//format secound to e.g. "2:30 h"
++(NSString*) formatSeconds:(float)timeInSecs {	
+	const int secsPerMin = 60;
+	const int secsPerHour = secsPerMin * 60;
+	const char *timeSep = ":"; //@TODO localise...
+	const char *hrsName = "";
+	
+	float time = timeInSecs;
+	int hrs = time/secsPerHour;
+	
+	time -= hrs*secsPerHour;
+	int mins = time/secsPerMin;
+	//time -= mins*secsPerMin;	
+	return [NSString stringWithFormat:@"%d%s%02d %s", hrs, timeSep, mins, hrsName];
+}
+
+@end

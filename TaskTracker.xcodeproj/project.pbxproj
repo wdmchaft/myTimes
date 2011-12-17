@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -72,6 +72,159 @@
 		4C762A0F0F51743B0043D447 /* ProjectEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C762A090F51743B0043D447 /* ProjectEditViewController.m */; };
 		4C762A100F51743B0043D447 /* TaskEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C762A0B0F51743B0043D447 /* TaskEditViewController.m */; };
 		4C762A110F51743B0043D447 /* TimerPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C762A0D0F51743B0043D447 /* TimerPickerViewController.m */; };
+		4C7749EE14608D40003347C4 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C5B91B30F236403008C3A84 /* MainWindow.xib */; };
+		4C7749EF14608D40003347C4 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C5B91D10F236552008C3A84 /* RootViewController.xib */; };
+		4C7749F014608D40003347C4 /* ProjectDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C20FACA0F1941AF00A46994 /* ProjectDetailsView.xib */; };
+		4C7749F114608D40003347C4 /* ProjectEditView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C5B91DF0F2366EA008C3A84 /* ProjectEditView.xib */; };
+		4C7749F214608D40003347C4 /* WorkUnitsListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C20FE520F1A4B3400A46994 /* WorkUnitsListView.xib */; };
+		4C7749F314608D40003347C4 /* DatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C2006FF0F1E86BE00A46994 /* DatePickerView.xib */; };
+		4C7749F414608D40003347C4 /* TimePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C2008650F1FC69D00A46994 /* TimePickerView.xib */; };
+		4C7749F514608D40003347C4 /* TimerPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C2009D70F1FE66000A46994 /* TimerPickerView.xib */; };
+		4C7749F614608D40003347C4 /* TaskEditView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C5B91D80F236651008C3A84 /* TaskEditView.xib */; };
+		4C7749F714608D40003347C4 /* TextEditView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C5B92770F2382A8008C3A84 /* TextEditView.xib */; };
+		4C7749F814608D40003347C4 /* pencil-icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C5B92D50F239545008C3A84 /* pencil-icon-60.png */; };
+		4C7749F914608D40003347C4 /* pencil-icon-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C5B92D70F2395B9008C3A84 /* pencil-icon-30.png */; };
+		4C7749FA14608D40003347C4 /* pencil-icon-20.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C5B92DB0F2396A1008C3A84 /* pencil-icon-20.png */; };
+		4C7749FB14608D40003347C4 /* AppInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C5B92F40F23A3F0008C3A84 /* AppInfoView.xib */; };
+		4C7749FC14608D40003347C4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C5B947C0F23C885008C3A84 /* Localizable.strings */; };
+		4C7749FD14608D40003347C4 /* OneDayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CC754ED0F2509B6007F0E6D /* OneDayView.xib */; };
+		4C7749FE14608D40003347C4 /* mail-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CC75CFA0F2A377C007F0E6D /* mail-icon.png */; };
+		4C7749FF14608D40003347C4 /* checkmark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C7886930F32497A00991E14 /* checkmark.jpg */; };
+		4C774A0014608D40003347C4 /* roundedrect3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C2F97510F40DFC600F1C6F7 /* roundedrect3.png */; };
+		4C774A0114608D40003347C4 /* right-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C2F9A1E0F44C00700F1C6F7 /* right-arrow.png */; };
+		4C774A0214608D40003347C4 /* left-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C2F9A290F44C55300F1C6F7 /* left-arrow.png */; };
+		4C774A0314608D40003347C4 /* pause-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C2F9AC80F45DED400F1C6F7 /* pause-btn.png */; };
+		4C774A0414608D40003347C4 /* play-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C2F9AC90F45DED400F1C6F7 /* play-btn.png */; };
+		4C774A0514608D40003347C4 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4C2F9C440F46E38900F1C6F7 /* Settings.bundle */; };
+		4C774A0614608D40003347C4 /* WorkUnitDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C2F9EA90F4763C600F1C6F7 /* WorkUnitDetailsView.xib */; };
+		4C774A0714608D40003347C4 /* ProjectSubprojectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CFF17180F5ACD680044DF72 /* ProjectSubprojectView.xib */; };
+		4C774A0814608D40003347C4 /* StartStopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CFF171D0F5ACD920044DF72 /* StartStopView.xib */; };
+		4C774A0914608D40003347C4 /* PauseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CFF17220F5ACDC80044DF72 /* PauseView.xib */; };
+		4C774A0A14608D40003347C4 /* PlayPauseDeleteView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CFF17270F5ACDE30044DF72 /* PlayPauseDeleteView.xib */; };
+		4C774A0B14608D40003347C4 /* RemarkView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C2F9F790F48402C00F1C6F7 /* RemarkView.xib */; };
+		4C774A0C14608D40003347C4 /* red-button-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C2FA0730F48607100F1C6F7 /* red-button-background.png */; };
+		4C774A0D14608D40003347C4 /* PauseEditView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C2FA1450F499B2300F1C6F7 /* PauseEditView.xib */; };
+		4C774A0E14608D40003347C4 /* BeginEndEditView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CFF172E0F5ACE1A0044DF72 /* BeginEndEditView.xib */; };
+		4C774A0F14608D40003347C4 /* BeginEditCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CEDB70B0F4B2BCB00C9DF8C /* BeginEditCellView.xib */; };
+		4C774A1014608D40003347C4 /* EndEditCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CFF17340F5ACE430044DF72 /* EndEditCellView.xib */; };
+		4C774A1114608D40003347C4 /* PauseEditCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CEDB9730F4F2ACB00C9DF8C /* PauseEditCellView.xib */; };
+		4C774A1214608D40003347C4 /* HelpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CFF146A0F546F3F0044DF72 /* HelpView.xib */; };
+		4C774A1314608D40003347C4 /* help_de.html in Resources */ = {isa = PBXBuildFile; fileRef = 4CFF14990F5474E60044DF72 /* help_de.html */; };
+		4C774A1414608D40003347C4 /* help_en.html in Resources */ = {isa = PBXBuildFile; fileRef = 4CFF149A0F5474E60044DF72 /* help_en.html */; };
+		4C774A1514608D40003347C4 /* IMG_0001_de.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 4CFF149B0F5474E60044DF72 /* IMG_0001_de.PNG */; };
+		4C774A1614608D40003347C4 /* IMG_0001_en.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 4CFF149C0F5474E60044DF72 /* IMG_0001_en.PNG */; };
+		4C774A1714608D40003347C4 /* IMG_0009_de.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 4CFF149D0F5474E60044DF72 /* IMG_0009_de.PNG */; };
+		4C774A1814608D40003347C4 /* IMG_0009_en.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 4CFF149E0F5474E60044DF72 /* IMG_0009_en.PNG */; };
+		4C774A1914608D40003347C4 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 4CFF14D20F5478880044DF72 /* style.css */; };
+		4C774A1A14608D40003347C4 /* ProjectTaskEditView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CFF17110F5ACD270044DF72 /* ProjectTaskEditView.xib */; };
+		4C774A1B14608D40003347C4 /* ProjectTaskEditCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CFF17050F5ACCE30044DF72 /* ProjectTaskEditCellView.xib */; };
+		4C774A1C14608D40003347C4 /* addTimeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CFF16B00F589FD50044DF72 /* addTimeIcon.png */; };
+		4C774A1D14608D40003347C4 /* cal_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CFF18460F5B1FAE0044DF72 /* cal_icon.png */; };
+		4C774A1E14608D40003347C4 /* start-stop-screenshot_de.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CFF18760F5DD1EE0044DF72 /* start-stop-screenshot_de.png */; };
+		4C774A1F14608D40003347C4 /* start-stop-screenshot_en.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CFF18770F5DD1EE0044DF72 /* start-stop-screenshot_en.png */; };
+		4C774A2014608D40003347C4 /* mytimes-model.xsd in Resources */ = {isa = PBXBuildFile; fileRef = 4C61BB1A0F9253F8009E7F94 /* mytimes-model.xsd */; };
+		4C774A2114608D40003347C4 /* TimeEntryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C61BF2C0F963D99009E7F94 /* TimeEntryView.xib */; };
+		4C774A2214608D40003347C4 /* button-pause-enabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CCFD7580F97A1080029B30A /* button-pause-enabled.png */; };
+		4C774A2314608D40003347C4 /* button-play-enabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CCFD7590F97A1080029B30A /* button-play-enabled.png */; };
+		4C774A2414608D40003347C4 /* button-play-pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CCFD75A0F97A1080029B30A /* button-play-pressed.png */; };
+		4C774A2514608D40003347C4 /* button-stop-enabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CCFD75B0F97A1080029B30A /* button-stop-enabled.png */; };
+		4C774A2614608D40003347C4 /* led_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CCFD75C0F97A1080029B30A /* led_off.png */; };
+		4C774A2714608D40003347C4 /* led_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CCFD75D0F97A1080029B30A /* led_on.png */; };
+		4C774A2814608D40003347C4 /* mytimes-UI.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CCFD75E0F97A1080029B30A /* mytimes-UI.png */; };
+		4C774A2914608D40003347C4 /* crystallightning.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CEE39800F98DF7800C750DB /* crystallightning.ttf */; };
+		4C774A2A14608D40003347C4 /* DS-DIGI.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 4CAE62250F990AB2004F58C3 /* DS-DIGI.TTF */; };
+		4C774A2B14608D40003347C4 /* DS-DIGIB.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 4CAE62260F990AB2004F58C3 /* DS-DIGIB.TTF */; };
+		4C774A2C14608D40003347C4 /* butoon-details.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CAE624C0F99159B004F58C3 /* butoon-details.png */; };
+		4C774A2D14608D40003347C4 /* butoon-details_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CAE62510F991775004F58C3 /* butoon-details_pressed.png */; };
+		4C774A2E14608D40003347C4 /* button-stop_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CAE62560F991D13004F58C3 /* button-stop_pressed.png */; };
+		4C774A2F14608D40003347C4 /* tap.aif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAE62BE0F99F2A1004F58C3 /* tap.aif */; };
+		4C774A3014608D40003347C4 /* ExportMailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CAE62D20F9CCC75004F58C3 /* ExportMailView.xib */; };
+		4C774A3114608D40003347C4 /* 18-envelope.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CAE642A0F9E24C4004F58C3 /* 18-envelope.png */; };
+		4C774A3214608D40003347C4 /* ExportSettingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CAE64440F9E26D5004F58C3 /* ExportSettingsView.xib */; };
+		4C774A3314608D40003347C4 /* export.settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CAE67BE0FA3132D004F58C3 /* export.settings.plist */; };
+		4C774A3414608D40003347C4 /* 57-download.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CB7BF990FC9C7D90066E152 /* 57-download.png */; };
+		4C774A3514608D40003347C4 /* ProjectSelectionTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C8EC2780FD70A03000E0078 /* ProjectSelectionTableView.xib */; };
+		4C774A3614608D40003347C4 /* import.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CC86ACC0FE0204C00478107 /* import.png */; };
+		4C774A3714608D40003347C4 /* cal_icon_19x19.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CC86ADA0FE0222200478107 /* cal_icon_19x19.png */; };
+		4C774A3814608D40003347C4 /* mail.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CC86ADD0FE022E700478107 /* mail.png */; };
+		4C774A3914608D40003347C4 /* add_icon_19x19.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CC86AE20FE024F600478107 /* add_icon_19x19.png */; };
+		4C774A3A14608D40003347C4 /* version-history.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4CCED5191034A13C00B29892 /* version-history.txt */; };
+		4C774A3B14608D40003347C4 /* TaskEditViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C0E71A8119D576200D23623 /* TaskEditViewController2.xib */; };
+		4C774A3C14608D40003347C4 /* ImportUrlViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB390911D3D60C0012BD28 /* ImportUrlViewController.xib */; };
+		4C774A3D14608D40003347C4 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C3FDCFC11F62E78005D8D8D /* Default.png */; };
+		4C774A3E14608D40003347C4 /* BooleanEditView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C84765D11F74B7A0089DAAD /* BooleanEditView.xib */; };
+		4C774A3F14608D40003347C4 /* file_icon_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C821C2111FA125600DEB19C /* file_icon_small.png */; };
+		4C774A4014608D40003347C4 /* file_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C821C2211FA125600DEB19C /* file_icon.png */; };
+		4C774A4114608D40003347C4 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C821C8E11FAD2D100DEB19C /* Icon.png */; };
+		4C774A4214608D40003347C4 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CDE91C0144B060500E0290C /* icon.png */; };
+		4C774A4314608D40003347C4 /* app-icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4CDE91C2144B07BD00E0290C /* app-icon.jpg */; };
+		4C774A4514608D40003347C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		4C774A4614608D40003347C4 /* TaskTrackerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* TaskTrackerAppDelegate.m */; };
+		4C774A4714608D40003347C4 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */; };
+		4C774A4814608D40003347C4 /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C20F7BE0F18C1AF00A46994 /* Project.m */; };
+		4C774A4914608D40003347C4 /* ProjectTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C20F7C00F18C1AF00A46994 /* ProjectTask.m */; };
+		4C774A4A14608D40003347C4 /* TimeWorkUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C20F7C20F18C1AF00A46994 /* TimeWorkUnit.m */; };
+		4C774A4B14608D40003347C4 /* WorkUnitsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C20FE500F1A4B1F00A46994 /* WorkUnitsListViewController.m */; };
+		4C774A4C14608D40003347C4 /* TaskCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C20FFC30F1B63EA00A46994 /* TaskCell.m */; };
+		4C774A4D14608D40003347C4 /* TaskCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C20FFC60F1B640400A46994 /* TaskCellView.m */; };
+		4C774A4E14608D40003347C4 /* DatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2007020F1E86ED00A46994 /* DatePickerViewController.m */; };
+		4C774A4F14608D40003347C4 /* TimePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C20086A0F1FC72E00A46994 /* TimePickerViewController.m */; };
+		4C774A5014608D40003347C4 /* TextEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5B92750F238298008C3A84 /* TextEditViewController.m */; };
+		4C774A5114608D40003347C4 /* AppInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5B92F80F23A7EC008C3A84 /* AppInfoViewController.m */; };
+		4C774A5214608D40003347C4 /* CsvExportHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC75DAA0F2A6D67007F0E6D /* CsvExportHelper.m */; };
+		4C774A5314608D40003347C4 /* ProjectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC75F0D0F2BAEA0007F0E6D /* ProjectCell.m */; };
+		4C774A5414608D40003347C4 /* ProjectCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC75F0F0F2BAEA0007F0E6D /* ProjectCellView.m */; };
+		4C774A5514608D40003347C4 /* AbstractTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C78853D0F322A9700991E14 /* AbstractTableCell.m */; };
+		4C774A5614608D40003347C4 /* AbstractTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7885400F322AAA00991E14 /* AbstractTableCellView.m */; };
+		4C774A5714608D40003347C4 /* WorkUnitCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7885E20F3237CE00991E14 /* WorkUnitCell.m */; };
+		4C774A5814608D40003347C4 /* WorkUnitCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7885E50F3237DA00991E14 /* WorkUnitCellView.m */; };
+		4C774A5914608D40003347C4 /* WorkUnitDetailsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2F9EC30F476DFB00F1C6F7 /* WorkUnitDetailsTableViewController.m */; };
+		4C774A5A14608D40003347C4 /* WorkUnitDetailsCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2F9F3A0F48395800F1C6F7 /* WorkUnitDetailsCellView.m */; };
+		4C774A5B14608D40003347C4 /* PauseEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2FA1490F499BD800F1C6F7 /* PauseEditViewController.m */; };
+		4C774A5C14608D40003347C4 /* BeginEndEditTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CEDB6CC0F499D6200C9DF8C /* BeginEndEditTableViewController.m */; };
+		4C774A5D14608D40003347C4 /* BeginEndEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CEDB6D20F499E1400C9DF8C /* BeginEndEditViewController.m */; };
+		4C774A5E14608D40003347C4 /* PauseEditTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CEDB9640F4F25E200C9DF8C /* PauseEditTableViewController.m */; };
+		4C774A5F14608D40003347C4 /* CalendarTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7629DD0F5173450043D447 /* CalendarTableView.m */; };
+		4C774A6014608D40003347C4 /* CalendarTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7629DF0F5173450043D447 /* CalendarTableViewController.m */; };
+		4C774A6114608D40003347C4 /* CalendarTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7629E10F5173450043D447 /* CalendarTableViewModel.m */; };
+		4C774A6214608D40003347C4 /* CalEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7629E30F5173450043D447 /* CalEvent.m */; };
+		4C774A6314608D40003347C4 /* CalEventDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7629E50F5173450043D447 /* CalEventDescriptor.m */; };
+		4C774A6414608D40003347C4 /* CalItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7629E70F5173450043D447 /* CalItemView.m */; };
+		4C774A6514608D40003347C4 /* ProjectDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C762A060F51740E0043D447 /* ProjectDetailsViewController.m */; };
+		4C774A6614608D40003347C4 /* ProjectEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C762A090F51743B0043D447 /* ProjectEditViewController.m */; };
+		4C774A6714608D40003347C4 /* TaskEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C762A0B0F51743B0043D447 /* TaskEditViewController.m */; };
+		4C774A6814608D40003347C4 /* TimerPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C762A0D0F51743B0043D447 /* TimerPickerViewController.m */; };
+		4C774A6914608D40003347C4 /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFF146E0F546FC70044DF72 /* HelpViewController.m */; };
+		4C774A6A14608D40003347C4 /* ProjectTaskEditTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFF154A0F55CF3B0044DF72 /* ProjectTaskEditTableViewController.m */; };
+		4C774A6B14608D40003347C4 /* ProjectTaskEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFF154C0F55CF3B0044DF72 /* ProjectTaskEditViewController.m */; };
+		4C774A6C14608D40003347C4 /* TimeUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB403D20F7D8E3200750B97 /* TimeUtils.m */; };
+		4C774A6D14608D40003347C4 /* TimeUtilsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB403D70F7D901700750B97 /* TimeUtilsTest.m */; };
+		4C774A6E14608D40003347C4 /* XMLHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C61BB230F92549D009E7F94 /* XMLHelper.m */; };
+		4C774A6F14608D40003347C4 /* TimeEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C61BF490F964406009E7F94 /* TimeEntryViewController.m */; };
+		4C774A7014608D40003347C4 /* LedTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CEE397C0F98DE9100C750DB /* LedTextView.m */; };
+		4C774A7114608D40003347C4 /* ExportSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAE644F0F9E2AC9004F58C3 /* ExportSettingsViewController.m */; };
+		4C774A7214608D40003347C4 /* XmlParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4330FE0FA4AEE900852538 /* XmlParser.m */; };
+		4C774A7314608D40003347C4 /* ProjectSelectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8EC27C0FD70AB7000E0078 /* ProjectSelectionTableViewController.m */; };
+		4C774A7414608D40003347C4 /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6133001077931F00B5ABAC /* GTMNSString+HTML.m */; };
+		4C774A7514608D40003347C4 /* NSDataAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C88FA8F10B7FA75004710AE /* NSDataAddition.m */; };
+		4C774A7614608D40003347C4 /* DataEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB51C3710EA192D000F9F60 /* DataEntry.m */; };
+		4C774A7714608D40003347C4 /* TaskEditViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0E71A7119D576200D23623 /* TaskEditViewController2.m */; };
+		4C774A7814608D40003347C4 /* TextEditController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0E72FD119D9BA300D23623 /* TextEditController.m */; };
+		4C774A7914608D40003347C4 /* ImportUrlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAB390811D3D60C0012BD28 /* ImportUrlViewController.m */; };
+		4C774A7A14608D40003347C4 /* BooleanEditController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C84765911F74AA90089DAAD /* BooleanEditController.m */; };
+		4C774A7C14608D40003347C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		4C774A7D14608D40003347C4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		4C774A7E14608D40003347C4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */; };
+		4C774A7F14608D40003347C4 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C61BB8E0F928FDE009E7F94 /* CFNetwork.framework */; };
+		4C774A8014608D40003347C4 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CAE63880F9CF0D1004F58C3 /* AddressBook.framework */; };
+		4C774A8114608D40003347C4 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CAE638A0F9CF0D1004F58C3 /* AddressBookUI.framework */; };
+		4C774A8214608D40003347C4 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CCED53A1035E47200B29892 /* MessageUI.framework */; };
+		4C774A8314608D40003347C4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CCED6031035E81F00B29892 /* AudioToolbox.framework */; };
+		4C774A9414608D83003347C4 /* create_project.feature in Resources */ = {isa = PBXBuildFile; fileRef = 4C774A8D14608D83003347C4 /* create_project.feature */; };
+		4C774A9514608D83003347C4 /* common_steps.rb in Resources */ = {isa = PBXBuildFile; fileRef = 4C774A8F14608D83003347C4 /* common_steps.rb */; };
+		4C774A9614608D83003347C4 /* env.rb in Resources */ = {isa = PBXBuildFile; fileRef = 4C774A9114608D83003347C4 /* env.rb */; };
+		4C774A9714608D83003347C4 /* frank_static_resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4C774A9214608D83003347C4 /* frank_static_resources.bundle */; };
+		4C774A9814608D83003347C4 /* libFrank.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C774A9314608D83003347C4 /* libFrank.a */; };
 		4C78853E0F322A9700991E14 /* AbstractTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C78853D0F322A9700991E14 /* AbstractTableCell.m */; };
 		4C7885410F322AAA00991E14 /* AbstractTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7885400F322AAA00991E14 /* AbstractTableCellView.m */; };
 		4C7885E30F3237CE00991E14 /* WorkUnitCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7885E20F3237CE00991E14 /* WorkUnitCell.m */; };
@@ -79,7 +232,6 @@
 		4C7886940F32497A00991E14 /* checkmark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C7886930F32497A00991E14 /* checkmark.jpg */; };
 		4C821C2311FA125600DEB19C /* file_icon_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C821C2111FA125600DEB19C /* file_icon_small.png */; };
 		4C821C2411FA125600DEB19C /* file_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C821C2211FA125600DEB19C /* file_icon.png */; };
-		4C821C8F11FAD2D100DEB19C /* icon_old.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C821C8D11FAD2D100DEB19C /* icon_old.png */; };
 		4C821C9011FAD2D100DEB19C /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C821C8E11FAD2D100DEB19C /* Icon.png */; };
 		4C84765A11F74AA90089DAAD /* BooleanEditController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C84765911F74AA90089DAAD /* BooleanEditController.m */; };
 		4C84765E11F74B7A0089DAAD /* BooleanEditView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C84765D11F74B7A0089DAAD /* BooleanEditView.xib */; };
@@ -88,9 +240,6 @@
 		4C8EC27D0FD70AB7000E0078 /* ProjectSelectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8EC27C0FD70AB7000E0078 /* ProjectSelectionTableViewController.m */; };
 		4CAB390A11D3D60C0012BD28 /* ImportUrlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAB390811D3D60C0012BD28 /* ImportUrlViewController.m */; };
 		4CAB390B11D3D60C0012BD28 /* ImportUrlViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB390911D3D60C0012BD28 /* ImportUrlViewController.xib */; };
-		4CAE62270F990AB2004F58C3 /* DS-DIGI.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 4CAE62250F990AB2004F58C3 /* DS-DIGI.TTF */; };
-		4CAE62280F990AB2004F58C3 /* DS-DIGIB.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 4CAE62260F990AB2004F58C3 /* DS-DIGIB.TTF */; };
-		4CAE624D0F99159B004F58C3 /* butoon-details.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CAE624C0F99159B004F58C3 /* butoon-details.png */; };
 		4CAE62520F991775004F58C3 /* butoon-details_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CAE62510F991775004F58C3 /* butoon-details_pressed.png */; };
 		4CAE62570F991D13004F58C3 /* button-stop_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CAE62560F991D13004F58C3 /* button-stop_pressed.png */; };
 		4CAE62BF0F99F2A1004F58C3 /* tap.aif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAE62BE0F99F2A1004F58C3 /* tap.aif */; };
@@ -117,29 +266,15 @@
 		4CCED51A1034A13C00B29892 /* version-history.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4CCED5191034A13C00B29892 /* version-history.txt */; };
 		4CCED53B1035E47200B29892 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CCED53A1035E47200B29892 /* MessageUI.framework */; };
 		4CCED6041035E81F00B29892 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CCED6031035E81F00B29892 /* AudioToolbox.framework */; };
-		4CCFD75F0F97A1080029B30A /* button-pause-enabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CCFD7580F97A1080029B30A /* button-pause-enabled.png */; };
-		4CCFD7600F97A1080029B30A /* button-play-enabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CCFD7590F97A1080029B30A /* button-play-enabled.png */; };
-		4CCFD7610F97A1080029B30A /* button-play-pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CCFD75A0F97A1080029B30A /* button-play-pressed.png */; };
-		4CCFD7620F97A1080029B30A /* button-stop-enabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CCFD75B0F97A1080029B30A /* button-stop-enabled.png */; };
-		4CCFD7630F97A1080029B30A /* led_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CCFD75C0F97A1080029B30A /* led_off.png */; };
-		4CCFD7640F97A1080029B30A /* led_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CCFD75D0F97A1080029B30A /* led_on.png */; };
-		4CCFD7650F97A1080029B30A /* mytimes-UI.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CCFD75E0F97A1080029B30A /* mytimes-UI.png */; };
+		4CDE91C1144B060500E0290C /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CDE91C0144B060500E0290C /* icon.png */; };
+		4CDE91C3144B07BD00E0290C /* app-icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4CDE91C2144B07BD00E0290C /* app-icon.jpg */; };
 		4CEDB6CD0F499D6200C9DF8C /* BeginEndEditTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CEDB6CC0F499D6200C9DF8C /* BeginEndEditTableViewController.m */; };
 		4CEDB6D30F499E1400C9DF8C /* BeginEndEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CEDB6D20F499E1400C9DF8C /* BeginEndEditViewController.m */; };
 		4CEDB70C0F4B2BCB00C9DF8C /* BeginEditCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CEDB70B0F4B2BCB00C9DF8C /* BeginEditCellView.xib */; };
 		4CEDB9650F4F25E200C9DF8C /* PauseEditTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CEDB9640F4F25E200C9DF8C /* PauseEditTableViewController.m */; };
 		4CEDB9740F4F2ACB00C9DF8C /* PauseEditCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CEDB9730F4F2ACB00C9DF8C /* PauseEditCellView.xib */; };
 		4CEE397D0F98DE9100C750DB /* LedTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CEE397C0F98DE9100C750DB /* LedTextView.m */; };
-		4CEE39810F98DF7800C750DB /* crystallightning.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CEE39800F98DF7800C750DB /* crystallightning.ttf */; };
-		4CFF146B0F546F3F0044DF72 /* HelpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CFF146A0F546F3F0044DF72 /* HelpView.xib */; };
 		4CFF146F0F546FC70044DF72 /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFF146E0F546FC70044DF72 /* HelpViewController.m */; };
-		4CFF149F0F5474E60044DF72 /* help_de.html in Resources */ = {isa = PBXBuildFile; fileRef = 4CFF14990F5474E60044DF72 /* help_de.html */; };
-		4CFF14A00F5474E60044DF72 /* help_en.html in Resources */ = {isa = PBXBuildFile; fileRef = 4CFF149A0F5474E60044DF72 /* help_en.html */; };
-		4CFF14A10F5474E60044DF72 /* IMG_0001_de.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 4CFF149B0F5474E60044DF72 /* IMG_0001_de.PNG */; };
-		4CFF14A20F5474E60044DF72 /* IMG_0001_en.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 4CFF149C0F5474E60044DF72 /* IMG_0001_en.PNG */; };
-		4CFF14A30F5474E60044DF72 /* IMG_0009_de.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 4CFF149D0F5474E60044DF72 /* IMG_0009_de.PNG */; };
-		4CFF14A40F5474E60044DF72 /* IMG_0009_en.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 4CFF149E0F5474E60044DF72 /* IMG_0009_en.PNG */; };
-		4CFF14D30F5478880044DF72 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 4CFF14D20F5478880044DF72 /* style.css */; };
 		4CFF154D0F55CF3B0044DF72 /* ProjectTaskEditTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFF154A0F55CF3B0044DF72 /* ProjectTaskEditTableViewController.m */; };
 		4CFF154E0F55CF3B0044DF72 /* ProjectTaskEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFF154C0F55CF3B0044DF72 /* ProjectTaskEditViewController.m */; };
 		4CFF16B10F589FD50044DF72 /* addTimeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CFF16B00F589FD50044DF72 /* addTimeIcon.png */; };
@@ -266,6 +401,13 @@
 		4C762A0B0F51743B0043D447 /* TaskEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskEditViewController.m; sourceTree = "<group>"; };
 		4C762A0C0F51743B0043D447 /* TimerPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerPickerViewController.h; sourceTree = "<group>"; };
 		4C762A0D0F51743B0043D447 /* TimerPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerPickerViewController.m; sourceTree = "<group>"; };
+		4C774A8814608D40003347C4 /* TaskTracker Frankified.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TaskTracker Frankified.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C774A8A14608D41003347C4 /* TaskTracker copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "TaskTracker copy-Info.plist"; path = "/Users/michael/devel/cpp/TaskTracker/TaskTracker copy-Info.plist"; sourceTree = "<absolute>"; };
+		4C774A8D14608D83003347C4 /* create_project.feature */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = create_project.feature; sourceTree = "<group>"; };
+		4C774A8F14608D83003347C4 /* common_steps.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = common_steps.rb; sourceTree = "<group>"; };
+		4C774A9114608D83003347C4 /* env.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = env.rb; sourceTree = "<group>"; };
+		4C774A9214608D83003347C4 /* frank_static_resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = frank_static_resources.bundle; sourceTree = "<group>"; };
+		4C774A9314608D83003347C4 /* libFrank.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFrank.a; sourceTree = "<group>"; };
 		4C7884700F31012F00991E14 /* TableRowSelectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableRowSelectionDelegate.h; sourceTree = "<group>"; };
 		4C78853C0F322A9700991E14 /* AbstractTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractTableCell.h; sourceTree = "<group>"; };
 		4C78853D0F322A9700991E14 /* AbstractTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractTableCell.m; sourceTree = "<group>"; };
@@ -278,7 +420,6 @@
 		4C7886930F32497A00991E14 /* checkmark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = checkmark.jpg; sourceTree = "<group>"; };
 		4C821C2111FA125600DEB19C /* file_icon_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = file_icon_small.png; sourceTree = "<group>"; };
 		4C821C2211FA125600DEB19C /* file_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = file_icon.png; sourceTree = "<group>"; };
-		4C821C8D11FAD2D100DEB19C /* icon_old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_old.png; sourceTree = "<group>"; };
 		4C821C8E11FAD2D100DEB19C /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		4C84765811F74AA90089DAAD /* BooleanEditController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BooleanEditController.h; sourceTree = "<group>"; };
 		4C84765911F74AA90089DAAD /* BooleanEditController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BooleanEditController.m; sourceTree = "<group>"; };
@@ -334,6 +475,8 @@
 		4CCFD75C0F97A1080029B30A /* led_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = led_off.png; path = mytimes_ui/led_off.png; sourceTree = "<group>"; };
 		4CCFD75D0F97A1080029B30A /* led_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = led_on.png; path = mytimes_ui/led_on.png; sourceTree = "<group>"; };
 		4CCFD75E0F97A1080029B30A /* mytimes-UI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mytimes-UI.png"; path = "mytimes_ui/mytimes-UI.png"; sourceTree = "<group>"; };
+		4CDE91C0144B060500E0290C /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		4CDE91C2144B07BD00E0290C /* app-icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "app-icon.jpg"; sourceTree = "<group>"; };
 		4CEDB6CB0F499D6200C9DF8C /* BeginEndEditTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeginEndEditTableViewController.h; sourceTree = "<group>"; };
 		4CEDB6CC0F499D6200C9DF8C /* BeginEndEditTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeginEndEditTableViewController.m; sourceTree = "<group>"; };
 		4CEDB6CE0F499D7100C9DF8C /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/BeginEndEditView.xib; sourceTree = "<group>"; };
@@ -394,6 +537,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4C774A7B14608D40003347C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C774A7C14608D40003347C4 /* Foundation.framework in Frameworks */,
+				4C774A7D14608D40003347C4 /* UIKit.framework in Frameworks */,
+				4C774A7E14608D40003347C4 /* CoreGraphics.framework in Frameworks */,
+				4C774A7F14608D40003347C4 /* CFNetwork.framework in Frameworks */,
+				4C774A8014608D40003347C4 /* AddressBook.framework in Frameworks */,
+				4C774A8114608D40003347C4 /* AddressBookUI.framework in Frameworks */,
+				4C774A8214608D40003347C4 /* MessageUI.framework in Frameworks */,
+				4C774A8314608D40003347C4 /* AudioToolbox.framework in Frameworks */,
+				4C774A9814608D83003347C4 /* libFrank.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -432,6 +591,7 @@
 			isa = PBXGroup;
 			children = (
 				1D6058910D05DD3D006BFB54 /* TaskTracker.app */,
+				4C774A8814608D40003347C4 /* TaskTracker Frankified.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -439,12 +599,15 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				4C774A8B14608D83003347C4 /* Frank */,
+				4CDE91C0144B060500E0290C /* icon.png */,
 				4C61BB180F9253DC009E7F94 /* model */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				4C774A8A14608D41003347C4 /* TaskTracker copy-Info.plist */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -461,7 +624,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				4C821C8D11FAD2D100DEB19C /* icon_old.png */,
+				4CDE91C2144B07BD00E0290C /* app-icon.jpg */,
 				4C821C8E11FAD2D100DEB19C /* Icon.png */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				4C3FDCFC11F62E78005D8D8D /* Default.png */,
@@ -601,6 +764,42 @@
 				4C61BB1A0F9253F8009E7F94 /* mytimes-model.xsd */,
 			);
 			name = model;
+			sourceTree = "<group>";
+		};
+		4C774A8B14608D83003347C4 /* Frank */ = {
+			isa = PBXGroup;
+			children = (
+				4C774A8C14608D83003347C4 /* features */,
+				4C774A9214608D83003347C4 /* frank_static_resources.bundle */,
+				4C774A9314608D83003347C4 /* libFrank.a */,
+			);
+			path = Frank;
+			sourceTree = "<group>";
+		};
+		4C774A8C14608D83003347C4 /* features */ = {
+			isa = PBXGroup;
+			children = (
+				4C774A8D14608D83003347C4 /* create_project.feature */,
+				4C774A8E14608D83003347C4 /* step_definitions */,
+				4C774A9014608D83003347C4 /* support */,
+			);
+			path = features;
+			sourceTree = "<group>";
+		};
+		4C774A8E14608D83003347C4 /* step_definitions */ = {
+			isa = PBXGroup;
+			children = (
+				4C774A8F14608D83003347C4 /* common_steps.rb */,
+			);
+			path = step_definitions;
+			sourceTree = "<group>";
+		};
+		4C774A9014608D83003347C4 /* support */ = {
+			isa = PBXGroup;
+			children = (
+				4C774A9114608D83003347C4 /* env.rb */,
+			);
+			path = support;
 			sourceTree = "<group>";
 		};
 		4CAE62D10F9CCC56004F58C3 /* export */ = {
@@ -799,13 +998,33 @@
 			productReference = 1D6058910D05DD3D006BFB54 /* TaskTracker.app */;
 			productType = "com.apple.product-type.application";
 		};
+		4C7749EC14608D40003347C4 /* TaskTracker Frankified */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C774A8414608D40003347C4 /* Build configuration list for PBXNativeTarget "TaskTracker Frankified" */;
+			buildPhases = (
+				4C7749ED14608D40003347C4 /* Resources */,
+				4C774A4414608D40003347C4 /* Sources */,
+				4C774A7B14608D40003347C4 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TaskTracker Frankified";
+			productName = TaskTracker;
+			productReference = 4C774A8814608D40003347C4 /* TaskTracker Frankified.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "TaskTracker" */;
-			compatibilityVersion = "Xcode 3.1";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -822,6 +1041,7 @@
 			projectRoot = "";
 			targets = (
 				1D6058900D05DD3D006BFB54 /* TaskTracker */,
+				4C7749EC14608D40003347C4 /* TaskTracker Frankified */,
 			);
 		};
 /* End PBXProject section */
@@ -867,14 +1087,6 @@
 				4CEDB70C0F4B2BCB00C9DF8C /* BeginEditCellView.xib in Resources */,
 				4CFF17350F5ACE430044DF72 /* EndEditCellView.xib in Resources */,
 				4CEDB9740F4F2ACB00C9DF8C /* PauseEditCellView.xib in Resources */,
-				4CFF146B0F546F3F0044DF72 /* HelpView.xib in Resources */,
-				4CFF149F0F5474E60044DF72 /* help_de.html in Resources */,
-				4CFF14A00F5474E60044DF72 /* help_en.html in Resources */,
-				4CFF14A10F5474E60044DF72 /* IMG_0001_de.PNG in Resources */,
-				4CFF14A20F5474E60044DF72 /* IMG_0001_en.PNG in Resources */,
-				4CFF14A30F5474E60044DF72 /* IMG_0009_de.PNG in Resources */,
-				4CFF14A40F5474E60044DF72 /* IMG_0009_en.PNG in Resources */,
-				4CFF14D30F5478880044DF72 /* style.css in Resources */,
 				4CFF17120F5ACD270044DF72 /* ProjectTaskEditView.xib in Resources */,
 				4CFF17060F5ACCE30044DF72 /* ProjectTaskEditCellView.xib in Resources */,
 				4CFF16B10F589FD50044DF72 /* addTimeIcon.png in Resources */,
@@ -883,17 +1095,6 @@
 				4CFF18790F5DD1EE0044DF72 /* start-stop-screenshot_en.png in Resources */,
 				4C61BB1C0F9253F8009E7F94 /* mytimes-model.xsd in Resources */,
 				4C61BF2D0F963D99009E7F94 /* TimeEntryView.xib in Resources */,
-				4CCFD75F0F97A1080029B30A /* button-pause-enabled.png in Resources */,
-				4CCFD7600F97A1080029B30A /* button-play-enabled.png in Resources */,
-				4CCFD7610F97A1080029B30A /* button-play-pressed.png in Resources */,
-				4CCFD7620F97A1080029B30A /* button-stop-enabled.png in Resources */,
-				4CCFD7630F97A1080029B30A /* led_off.png in Resources */,
-				4CCFD7640F97A1080029B30A /* led_on.png in Resources */,
-				4CCFD7650F97A1080029B30A /* mytimes-UI.png in Resources */,
-				4CEE39810F98DF7800C750DB /* crystallightning.ttf in Resources */,
-				4CAE62270F990AB2004F58C3 /* DS-DIGI.TTF in Resources */,
-				4CAE62280F990AB2004F58C3 /* DS-DIGIB.TTF in Resources */,
-				4CAE624D0F99159B004F58C3 /* butoon-details.png in Resources */,
 				4CAE62520F991775004F58C3 /* butoon-details_pressed.png in Resources */,
 				4CAE62570F991D13004F58C3 /* button-stop_pressed.png in Resources */,
 				4CAE62BF0F99F2A1004F58C3 /* tap.aif in Resources */,
@@ -914,8 +1115,106 @@
 				4C84765E11F74B7A0089DAAD /* BooleanEditView.xib in Resources */,
 				4C821C2311FA125600DEB19C /* file_icon_small.png in Resources */,
 				4C821C2411FA125600DEB19C /* file_icon.png in Resources */,
-				4C821C8F11FAD2D100DEB19C /* icon_old.png in Resources */,
 				4C821C9011FAD2D100DEB19C /* Icon.png in Resources */,
+				4CDE91C1144B060500E0290C /* icon.png in Resources */,
+				4CDE91C3144B07BD00E0290C /* app-icon.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C7749ED14608D40003347C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C7749EE14608D40003347C4 /* MainWindow.xib in Resources */,
+				4C7749EF14608D40003347C4 /* RootViewController.xib in Resources */,
+				4C7749F014608D40003347C4 /* ProjectDetailsView.xib in Resources */,
+				4C7749F114608D40003347C4 /* ProjectEditView.xib in Resources */,
+				4C7749F214608D40003347C4 /* WorkUnitsListView.xib in Resources */,
+				4C7749F314608D40003347C4 /* DatePickerView.xib in Resources */,
+				4C7749F414608D40003347C4 /* TimePickerView.xib in Resources */,
+				4C7749F514608D40003347C4 /* TimerPickerView.xib in Resources */,
+				4C7749F614608D40003347C4 /* TaskEditView.xib in Resources */,
+				4C7749F714608D40003347C4 /* TextEditView.xib in Resources */,
+				4C7749F814608D40003347C4 /* pencil-icon-60.png in Resources */,
+				4C7749F914608D40003347C4 /* pencil-icon-30.png in Resources */,
+				4C7749FA14608D40003347C4 /* pencil-icon-20.png in Resources */,
+				4C7749FB14608D40003347C4 /* AppInfoView.xib in Resources */,
+				4C7749FC14608D40003347C4 /* Localizable.strings in Resources */,
+				4C7749FD14608D40003347C4 /* OneDayView.xib in Resources */,
+				4C7749FE14608D40003347C4 /* mail-icon.png in Resources */,
+				4C7749FF14608D40003347C4 /* checkmark.jpg in Resources */,
+				4C774A0014608D40003347C4 /* roundedrect3.png in Resources */,
+				4C774A0114608D40003347C4 /* right-arrow.png in Resources */,
+				4C774A0214608D40003347C4 /* left-arrow.png in Resources */,
+				4C774A0314608D40003347C4 /* pause-btn.png in Resources */,
+				4C774A0414608D40003347C4 /* play-btn.png in Resources */,
+				4C774A0514608D40003347C4 /* Settings.bundle in Resources */,
+				4C774A0614608D40003347C4 /* WorkUnitDetailsView.xib in Resources */,
+				4C774A0714608D40003347C4 /* ProjectSubprojectView.xib in Resources */,
+				4C774A0814608D40003347C4 /* StartStopView.xib in Resources */,
+				4C774A0914608D40003347C4 /* PauseView.xib in Resources */,
+				4C774A0A14608D40003347C4 /* PlayPauseDeleteView.xib in Resources */,
+				4C774A0B14608D40003347C4 /* RemarkView.xib in Resources */,
+				4C774A0C14608D40003347C4 /* red-button-background.png in Resources */,
+				4C774A0D14608D40003347C4 /* PauseEditView.xib in Resources */,
+				4C774A0E14608D40003347C4 /* BeginEndEditView.xib in Resources */,
+				4C774A0F14608D40003347C4 /* BeginEditCellView.xib in Resources */,
+				4C774A1014608D40003347C4 /* EndEditCellView.xib in Resources */,
+				4C774A1114608D40003347C4 /* PauseEditCellView.xib in Resources */,
+				4C774A1214608D40003347C4 /* HelpView.xib in Resources */,
+				4C774A1314608D40003347C4 /* help_de.html in Resources */,
+				4C774A1414608D40003347C4 /* help_en.html in Resources */,
+				4C774A1514608D40003347C4 /* IMG_0001_de.PNG in Resources */,
+				4C774A1614608D40003347C4 /* IMG_0001_en.PNG in Resources */,
+				4C774A1714608D40003347C4 /* IMG_0009_de.PNG in Resources */,
+				4C774A1814608D40003347C4 /* IMG_0009_en.PNG in Resources */,
+				4C774A1914608D40003347C4 /* style.css in Resources */,
+				4C774A1A14608D40003347C4 /* ProjectTaskEditView.xib in Resources */,
+				4C774A1B14608D40003347C4 /* ProjectTaskEditCellView.xib in Resources */,
+				4C774A1C14608D40003347C4 /* addTimeIcon.png in Resources */,
+				4C774A1D14608D40003347C4 /* cal_icon.png in Resources */,
+				4C774A1E14608D40003347C4 /* start-stop-screenshot_de.png in Resources */,
+				4C774A1F14608D40003347C4 /* start-stop-screenshot_en.png in Resources */,
+				4C774A2014608D40003347C4 /* mytimes-model.xsd in Resources */,
+				4C774A2114608D40003347C4 /* TimeEntryView.xib in Resources */,
+				4C774A2214608D40003347C4 /* button-pause-enabled.png in Resources */,
+				4C774A2314608D40003347C4 /* button-play-enabled.png in Resources */,
+				4C774A2414608D40003347C4 /* button-play-pressed.png in Resources */,
+				4C774A2514608D40003347C4 /* button-stop-enabled.png in Resources */,
+				4C774A2614608D40003347C4 /* led_off.png in Resources */,
+				4C774A2714608D40003347C4 /* led_on.png in Resources */,
+				4C774A2814608D40003347C4 /* mytimes-UI.png in Resources */,
+				4C774A2914608D40003347C4 /* crystallightning.ttf in Resources */,
+				4C774A2A14608D40003347C4 /* DS-DIGI.TTF in Resources */,
+				4C774A2B14608D40003347C4 /* DS-DIGIB.TTF in Resources */,
+				4C774A2C14608D40003347C4 /* butoon-details.png in Resources */,
+				4C774A2D14608D40003347C4 /* butoon-details_pressed.png in Resources */,
+				4C774A2E14608D40003347C4 /* button-stop_pressed.png in Resources */,
+				4C774A2F14608D40003347C4 /* tap.aif in Resources */,
+				4C774A3014608D40003347C4 /* ExportMailView.xib in Resources */,
+				4C774A3114608D40003347C4 /* 18-envelope.png in Resources */,
+				4C774A3214608D40003347C4 /* ExportSettingsView.xib in Resources */,
+				4C774A3314608D40003347C4 /* export.settings.plist in Resources */,
+				4C774A3414608D40003347C4 /* 57-download.png in Resources */,
+				4C774A3514608D40003347C4 /* ProjectSelectionTableView.xib in Resources */,
+				4C774A3614608D40003347C4 /* import.png in Resources */,
+				4C774A3714608D40003347C4 /* cal_icon_19x19.png in Resources */,
+				4C774A3814608D40003347C4 /* mail.png in Resources */,
+				4C774A3914608D40003347C4 /* add_icon_19x19.png in Resources */,
+				4C774A3A14608D40003347C4 /* version-history.txt in Resources */,
+				4C774A3B14608D40003347C4 /* TaskEditViewController2.xib in Resources */,
+				4C774A3C14608D40003347C4 /* ImportUrlViewController.xib in Resources */,
+				4C774A3D14608D40003347C4 /* Default.png in Resources */,
+				4C774A3E14608D40003347C4 /* BooleanEditView.xib in Resources */,
+				4C774A3F14608D40003347C4 /* file_icon_small.png in Resources */,
+				4C774A4014608D40003347C4 /* file_icon.png in Resources */,
+				4C774A4114608D40003347C4 /* Icon.png in Resources */,
+				4C774A4214608D40003347C4 /* icon.png in Resources */,
+				4C774A4314608D40003347C4 /* app-icon.jpg in Resources */,
+				4C774A9414608D83003347C4 /* create_project.feature in Resources */,
+				4C774A9514608D83003347C4 /* common_steps.rb in Resources */,
+				4C774A9614608D83003347C4 /* env.rb in Resources */,
+				4C774A9714608D83003347C4 /* frank_static_resources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -980,6 +1279,67 @@
 				4C0E72FE119D9BA300D23623 /* TextEditController.m in Sources */,
 				4CAB390A11D3D60C0012BD28 /* ImportUrlViewController.m in Sources */,
 				4C84765A11F74AA90089DAAD /* BooleanEditController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C774A4414608D40003347C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C774A4514608D40003347C4 /* main.m in Sources */,
+				4C774A4614608D40003347C4 /* TaskTrackerAppDelegate.m in Sources */,
+				4C774A4714608D40003347C4 /* RootViewController.m in Sources */,
+				4C774A4814608D40003347C4 /* Project.m in Sources */,
+				4C774A4914608D40003347C4 /* ProjectTask.m in Sources */,
+				4C774A4A14608D40003347C4 /* TimeWorkUnit.m in Sources */,
+				4C774A4B14608D40003347C4 /* WorkUnitsListViewController.m in Sources */,
+				4C774A4C14608D40003347C4 /* TaskCell.m in Sources */,
+				4C774A4D14608D40003347C4 /* TaskCellView.m in Sources */,
+				4C774A4E14608D40003347C4 /* DatePickerViewController.m in Sources */,
+				4C774A4F14608D40003347C4 /* TimePickerViewController.m in Sources */,
+				4C774A5014608D40003347C4 /* TextEditViewController.m in Sources */,
+				4C774A5114608D40003347C4 /* AppInfoViewController.m in Sources */,
+				4C774A5214608D40003347C4 /* CsvExportHelper.m in Sources */,
+				4C774A5314608D40003347C4 /* ProjectCell.m in Sources */,
+				4C774A5414608D40003347C4 /* ProjectCellView.m in Sources */,
+				4C774A5514608D40003347C4 /* AbstractTableCell.m in Sources */,
+				4C774A5614608D40003347C4 /* AbstractTableCellView.m in Sources */,
+				4C774A5714608D40003347C4 /* WorkUnitCell.m in Sources */,
+				4C774A5814608D40003347C4 /* WorkUnitCellView.m in Sources */,
+				4C774A5914608D40003347C4 /* WorkUnitDetailsTableViewController.m in Sources */,
+				4C774A5A14608D40003347C4 /* WorkUnitDetailsCellView.m in Sources */,
+				4C774A5B14608D40003347C4 /* PauseEditViewController.m in Sources */,
+				4C774A5C14608D40003347C4 /* BeginEndEditTableViewController.m in Sources */,
+				4C774A5D14608D40003347C4 /* BeginEndEditViewController.m in Sources */,
+				4C774A5E14608D40003347C4 /* PauseEditTableViewController.m in Sources */,
+				4C774A5F14608D40003347C4 /* CalendarTableView.m in Sources */,
+				4C774A6014608D40003347C4 /* CalendarTableViewController.m in Sources */,
+				4C774A6114608D40003347C4 /* CalendarTableViewModel.m in Sources */,
+				4C774A6214608D40003347C4 /* CalEvent.m in Sources */,
+				4C774A6314608D40003347C4 /* CalEventDescriptor.m in Sources */,
+				4C774A6414608D40003347C4 /* CalItemView.m in Sources */,
+				4C774A6514608D40003347C4 /* ProjectDetailsViewController.m in Sources */,
+				4C774A6614608D40003347C4 /* ProjectEditViewController.m in Sources */,
+				4C774A6714608D40003347C4 /* TaskEditViewController.m in Sources */,
+				4C774A6814608D40003347C4 /* TimerPickerViewController.m in Sources */,
+				4C774A6914608D40003347C4 /* HelpViewController.m in Sources */,
+				4C774A6A14608D40003347C4 /* ProjectTaskEditTableViewController.m in Sources */,
+				4C774A6B14608D40003347C4 /* ProjectTaskEditViewController.m in Sources */,
+				4C774A6C14608D40003347C4 /* TimeUtils.m in Sources */,
+				4C774A6D14608D40003347C4 /* TimeUtilsTest.m in Sources */,
+				4C774A6E14608D40003347C4 /* XMLHelper.m in Sources */,
+				4C774A6F14608D40003347C4 /* TimeEntryViewController.m in Sources */,
+				4C774A7014608D40003347C4 /* LedTextView.m in Sources */,
+				4C774A7114608D40003347C4 /* ExportSettingsViewController.m in Sources */,
+				4C774A7214608D40003347C4 /* XmlParser.m in Sources */,
+				4C774A7314608D40003347C4 /* ProjectSelectionTableViewController.m in Sources */,
+				4C774A7414608D40003347C4 /* GTMNSString+HTML.m in Sources */,
+				4C774A7514608D40003347C4 /* NSDataAddition.m in Sources */,
+				4C774A7614608D40003347C4 /* DataEntry.m in Sources */,
+				4C774A7714608D40003347C4 /* TaskEditViewController2.m in Sources */,
+				4C774A7814608D40003347C4 /* TextEditController.m in Sources */,
+				4C774A7914608D40003347C4 /* ImportUrlViewController.m in Sources */,
+				4C774A7A14608D40003347C4 /* BooleanEditController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1123,6 +1483,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = TaskTracker_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../Calendar/build/Debug-iphonesimulator\"",
@@ -1131,6 +1492,7 @@
 				PRODUCT_NAME = TaskTracker;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -1146,13 +1508,106 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = TaskTracker_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../Calendar/build/Debug-iphonesimulator\"",
 				);
 				PRODUCT_NAME = TaskTracker;
+				SDKROOT = iphoneos;
 			};
 			name = Release;
+		};
+		4C774A8514608D40003347C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TaskTracker_Prefix.pch;
+				INFOPLIST_FILE = "TaskTracker copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../Calendar/build/Debug-iphonesimulator\"",
+					"\"$(SRCROOT)/Frank\"",
+				);
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "TaskTracker Frankified";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4C774A8614608D40003347C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TaskTracker_Prefix.pch;
+				INFOPLIST_FILE = "TaskTracker copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../Calendar/build/Debug-iphonesimulator\"",
+					"\"$(SRCROOT)/Frank\"",
+				);
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "TaskTracker Frankified";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		4C774A8714608D40003347C4 /* distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TaskTracker_Prefix.pch;
+				INFOPLIST_FILE = "TaskTracker copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../Calendar/build/Debug-iphonesimulator\"",
+					"\"$(SRCROOT)/Frank\"",
+				);
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "TaskTracker Frankified";
+				SDKROOT = iphoneos;
+			};
+			name = distribution;
 		};
 		4C77F17C0F2D1E0000DE2C21 /* distribution */ = {
 			isa = XCBuildConfiguration;
@@ -1162,8 +1617,7 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
-				PREBINDING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PROVISIONING_PROFILE = "C9B19F50-82C7-4C1C-AFA1-3B61501DE4F3";
 				SDKROOT = iphoneos4.0;
 			};
@@ -1181,11 +1635,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = TaskTracker_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../Calendar/build/Debug-iphonesimulator\"",
 				);
 				PRODUCT_NAME = TaskTracker;
+				SDKROOT = iphoneos;
 			};
 			name = distribution;
 		};
@@ -1194,15 +1650,14 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CODE_SIGN_IDENTITY = "Don't Code Sign";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Michael Anteboth (U538PC34FF)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				ONLY_ACTIVE_ARCH = YES;
-				PREBINDING = NO;
 				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "7E26F768-2072-4489-8EF9-2F20BF83676D";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -1215,8 +1670,7 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
-				PREBINDING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "FB73757F-6D2B-4F1C-BB91-DDBC798C4608";
 				SDKROOT = iphoneos4.0;
 			};
@@ -1231,6 +1685,16 @@
 				1D6058940D05DD3E006BFB54 /* Debug */,
 				1D6058950D05DD3E006BFB54 /* Release */,
 				4C77F17D0F2D1E0000DE2C21 /* distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C774A8414608D40003347C4 /* Build configuration list for PBXNativeTarget "TaskTracker Frankified" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C774A8514608D40003347C4 /* Debug */,
+				4C774A8614608D40003347C4 /* Release */,
+				4C774A8714608D40003347C4 /* distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

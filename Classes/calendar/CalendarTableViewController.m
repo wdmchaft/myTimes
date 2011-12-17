@@ -209,21 +209,21 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];        
     }
 	
-    UIFont* f = [cell.font fontWithSize:12];
-	cell.font = f;
+    UIFont* f = [cell.textLabel.font fontWithSize:12];
+	cell.textLabel.font = f;
 
-	cell.textColor = [UIColor grayColor];
+	cell.textLabel.textColor = [UIColor grayColor];
 
 	int hr = indexPath.row;
 	if (hr < 24) {
 		NSString* rowdelim = @"  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -";
 		NSString* timeString = [TimeUtils getTimeString:hr min:0];
-		cell.text = [NSString stringWithFormat:@"%@ %@", timeString, rowdelim ];
+		cell.textLabel.text = [NSString stringWithFormat:@"%@ %@", timeString, rowdelim ];
 	} else {
-		cell.text = @"        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -";
+		cell.textLabel.text = @"        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -";
 	}
     
 	//no selection visualization

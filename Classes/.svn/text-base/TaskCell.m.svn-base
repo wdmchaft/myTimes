@@ -1,0 +1,38 @@
+//
+//  TaskCell.m
+//  TaskTracker
+//
+//  Created by Michael Anteboth on 12.01.09.
+//  Copyright 2009 __MyCompanyName__. All rights reserved.
+//
+
+#import "TaskCell.h"
+#import "TaskCellView.h"
+#import "ProjectTask.h"
+
+@implementation TaskCell
+
+@synthesize task;
+
+- (id)initWithFrame:(CGRect)frame reuseIdentifier:(NSString *)reuseIdentifier {
+	if (self = [super initWithFrame:frame reuseIdentifier:reuseIdentifier]) {
+		CGRect tzvFrame = CGRectMake(7.0, 0.0, self.contentView.bounds.size.width, self.contentView.bounds.size.height);
+		cellView = [[TaskCellView alloc] initWithFrame:tzvFrame];
+		cellView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+		[self.contentView addSubview:cellView];
+	}
+	return self;
+}
+
+- (void)setTask:(ProjectTask*)atask{
+	TaskCellView* cv = (TaskCellView*) cellView;
+	cv.task = atask;
+}
+
+
+- (void)dealloc {
+	[task release];
+    [super dealloc];
+}
+
+@end

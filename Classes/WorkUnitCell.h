@@ -15,6 +15,6 @@
 	TimeWorkUnit* workUnit;
 }
 
-@property (retain) TimeWorkUnit* workUnit;
+@property (nonatomic, retain) TimeWorkUnit* workUnit;
 
 @end

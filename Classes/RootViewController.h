@@ -44,8 +44,8 @@
 @property (nonatomic,retain) IBOutlet UIBarButtonItem* emailButtonItem;
 @property (nonatomic,retain) IBOutlet UIBarButtonItem* calButtonItem;
 @property (nonatomic,retain) IBOutlet UIBarButtonItem* helpButtonItem;
-@property (nonatomic,retain) IBOutlet UIBarButtonItem* newWorkUnitButton;
-@property (nonatomic, retain) NSMutableArray *data;
+@property (nonatomic,retain) IBOutlet UIBarButtonItem* nWorkUnitButton;
+@property (nonatomic,retain) NSMutableArray *data;
 
 - (void) initToolbar;
 - (void) loadTimeEntryView;

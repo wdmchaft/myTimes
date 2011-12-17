@@ -11,7 +11,7 @@
 #import "ProjectTask.h"
 #import "TimeWorkUnit.h"
 
-@interface XmlParser : NSObject {
+@interface XmlParser : NSObject <NSXMLParserDelegate> {
 	NSMutableString *textInProgress;
 	Project* projectInProgress;
 	ProjectTask* taskInProgress;

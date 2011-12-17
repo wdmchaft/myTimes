@@ -21,7 +21,7 @@
 }
 
 @property (retain) 	UIButton* startStopButton;
-@property (retain) ProjectTask* task;
+@property (nonatomic, retain, setter = setTask:) ProjectTask* task;
 @property (retain) 	UIActivityIndicatorView* actIndicator;
 
 -(BOOL) hasRunningWorkUnits;

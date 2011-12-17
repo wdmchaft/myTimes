@@ -1,0 +1,188 @@
+//
+//  XmlParser.m
+//  TaskTracker
+//
+//  Created by Michael Anteboth on 26.04.09.
+//  Copyright 2009 __MyCompanyName__. All rights reserved.
+//
+
+#import "XmlParser.h"
+#import "GTMNSString+HTML.h"
+
+@implementation XmlParser
+
+-(NSMutableArray*) parseFromXmlData:(NSData*) xmlData {	
+	
+	// Create a new, empty itemArray
+    items = [[NSMutableArray alloc] init];
+	
+	//create the dateFormatter instance
+	dateFormatter = [[NSDateFormatter alloc] init];
+	[dateFormatter setTimeStyle:NSDateFormatterMediumStyle];
+	[dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss"];
+	
+    // Create a parser
+    NSXMLParser *parser = [[NSXMLParser alloc] initWithData:xmlData];
+    [parser setDelegate:self];
+	
+    // Do the parse
+    [parser parse];
+	
+	//release resources
+    [parser release];
+	[dateFormatter release];
+	
+    NSLog(@"parsed %i projects", [items count]);
+	
+	return items;
+}
+
+-(NSMutableArray*) parseFromURL:(NSString*) urlString {
+	
+    NSURL *url = [NSURL URLWithString:urlString];
+    NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url
+												cachePolicy:NSURLRequestReturnCacheDataElseLoad 
+											timeoutInterval:30];
+
+    NSData *urlData;
+    NSURLResponse *response;
+    NSError *error;
+	
+    urlData = [NSURLConnection sendSynchronousRequest:urlRequest
+                                    returningResponse:&response 
+                                                error:&error];
+
+	
+	return [self parseFromXmlData:urlData];
+
+}
+
+
+#pragma mark Delegate calls
+
+- (void)parser:(NSXMLParser *)parser 
+	didStartElement:(NSString *)elementName  
+  namespaceURI:(NSString *)namespaceURI
+ qualifiedName:(NSString *)qName 
+	attributes:(NSDictionary *)attributeDict
+{
+    NSLog(@"starting Element: %@", elementName);
+	
+    // Is it the start of a new project item?
+    if ([elementName isEqual:@"Project"]) {
+		
+        // Create a dictionary for the title/url for the item
+        projectInProgress = [[Project alloc] init];
+		
+		NSString *name = [attributeDict objectForKey:@"name"];
+		if (name != nil) name = [name gtm_stringByUnescapingFromHTML];
+		projectInProgress.name = name;
+		NSString *desc = [attributeDict objectForKey:@"description"];
+		if (desc != nil) desc = [desc gtm_stringByUnescapingFromHTML];
+		projectInProgress.description = desc;
+		
+		//get the editable falg from XML
+		NSString *editable = [attributeDict objectForKey:@"editable"];
+		if (editable != nil) {
+			projectInProgress.userChangeable = [editable boolValue];
+		} else {
+			projectInProgress.userChangeable = TRUE; //use true as default if no value set in XML
+		}
+		NSLog(@"project %@ is editable: %@", name, editable);
+		
+        return;
+    }
+	
+    // Is it the task element for the current project
+    if ([elementName isEqual:@"Task"]) {
+        taskInProgress = [[ProjectTask alloc] init];
+		
+		NSString *name = [attributeDict objectForKey:@"name"];
+		if (name != nil) name = [name gtm_stringByUnescapingFromHTML];
+		taskInProgress.name = name;
+		
+		NSString *desc = [attributeDict objectForKey:@"description"];
+		if (desc != nil) desc = [desc gtm_stringByUnescapingFromHTML];
+		taskInProgress.description = desc;
+		
+		//get the editable falg from XML
+		NSString *editable = [attributeDict objectForKey:@"editable"];
+		if (editable != nil) {
+			taskInProgress.userChangeable = [editable boolValue];
+		} else {
+			taskInProgress.userChangeable = TRUE; //use true as default if no value set in XML
+		}		
+		NSLog(@"task %@ is editable: %@", name, editable);
+		
+		//add Task to current project
+		[projectInProgress.tasks addObject:taskInProgress];
+        return;		
+    }
+	
+	//Is it the work unit element for the current task element?
+	if ([elementName isEqual:@"WorkUnit"]) {
+        wuInProgress = [[WorkUnit alloc] init]; //create new work unit
+		//read and set attributes
+		NSString *desc = [attributeDict objectForKey:@"description"];
+		if (desc != nil) desc = [desc gtm_stringByUnescapingFromHTML];
+		wuInProgress.description = desc;
+		NSString *start = [attributeDict objectForKey:@"startTime"];
+		wuInProgress.date = [dateFormatter dateFromString:start];
+		NSString *pause = [attributeDict objectForKey:@"pause"];
+		wuInProgress.pause = [NSNumber numberWithInt:[pause intValue]];
+		NSString *duration = [attributeDict objectForKey:@"duration"];
+		wuInProgress.duration = [NSNumber numberWithInt:[duration intValue]];
+		NSString *running = [attributeDict objectForKey:@"running"];
+		wuInProgress.running = [running boolValue];
+		NSString *chargeable = [attributeDict objectForKey:@"chargeable"];
+		wuInProgress.chargeable = [NSNumber numberWithBool:[chargeable boolValue]];
+		
+		//add workUnit to current task
+		[taskInProgress.workUnits addObject:wuInProgress];
+		return;
+	}
+}
+
+- (void)parser:(NSXMLParser *)parser
+ didEndElement:(NSString *)elementName
+  namespaceURI:(NSString *)namespaceURI
+ qualifiedName:(NSString *)qName
+{
+    NSLog(@"ending Element: %@", elementName);
+	
+    // Is the current item complete?
+    if ([elementName isEqual:@"Project"]) {
+        [items addObject:projectInProgress];
+		
+        // Clear the current item
+        [projectInProgress release];
+        projectInProgress = nil;
+        return;
+    }
+	/*
+	
+    // Is the current key complete?
+    if ([elementName isEqual:keyInProgress]) {
+        if ([elementName isEqual:@"DetailPageURL"]) {
+            [bookInProgress setDetailPage:textInProgress];
+        } else {
+            [bookInProgress setTitle:textInProgress];
+			
+        }
+        // Clear the text and key
+        [textInProgress release];
+        textInProgress = nil;
+        [keyInProgress release];
+        keyInProgress = nil;
+    }
+ */
+}
+
+// This method can get called multiple times for the
+// text in a single element
+- (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string {
+	[textInProgress appendString:string];
+}
+
+
+@end

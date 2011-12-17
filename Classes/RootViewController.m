@@ -33,7 +33,7 @@
 @synthesize emailButtonItem;
 @synthesize calButtonItem;
 @synthesize helpButtonItem;
-@synthesize newWorkUnitButton;
+@synthesize nWorkUnitButton;
 @synthesize importButtonItem;
 
 #define ROW_HEIGHT 60
@@ -182,7 +182,7 @@
 		case MFMailComposeResultFailed:
 			NSLog(@"Fehler bei Versenden der Mail:");
 			if (error != nil) {
-				NSLog([error localizedDescription]);
+				NSLog(@"%@", [error localizedDescription]);
 				[self showErrorMessage:[error localizedDescription]];
 			}
 			[self dismissModalViewControllerAnimated:FALSE];
@@ -374,6 +374,7 @@
 - (void) infoAction {
 	//create and show info view
 	AppInfoViewController* ctl = [[AppInfoViewController alloc] initWithNibName:@"AppInfoView" bundle:nil];
+    ctl.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
 	[self.navigationController presentModalViewController:ctl animated:true];
 	[ctl release];
 }
@@ -680,7 +681,9 @@ NSInteger calItemTimeSort(id obj0, id obj1, void *reverse) {
 	
 	if (cell == nil) {
 		CGRect startingRect = CGRectMake(0.0, 0.0, 320.0, ROW_HEIGHT);
-		cell = [[[ProjectCell alloc] initWithFrame:startingRect reuseIdentifier:CellIdentifier] autorelease];
+		cell = [[[ProjectCell alloc] initWithStyle:UITableViewCellStyleDefault 
+                                   reuseIdentifier:CellIdentifier] autorelease];
+        cell.frame = startingRect;
 	}
 	
 	//set the project task element in the cell view

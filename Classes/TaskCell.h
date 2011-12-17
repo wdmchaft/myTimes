@@ -14,6 +14,6 @@
 	ProjectTask* task;
 }
 
-@property (retain) ProjectTask* task;
+@property (nonatomic, retain, setter = setTask:) ProjectTask* task;
 
 @end

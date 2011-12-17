@@ -199,10 +199,8 @@
     
 	static NSString *CellIdentifier = @"TaskCellView";	
 	TaskCell* taskCell = (TaskCell*)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-	
 	if (taskCell == nil) {
-		CGRect startingRect = CGRectMake(0.0, 0.0, 320.0, ROW_HEIGHT);
-		taskCell = [[[TaskCell alloc] initWithFrame:startingRect reuseIdentifier:CellIdentifier] autorelease];
+   		taskCell = [[[TaskCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
 	}
 	
 	//set the project task element in the cell view

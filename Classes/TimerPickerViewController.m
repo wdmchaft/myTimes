@@ -71,7 +71,7 @@
 
 - (void)dealloc {
 	[datePicker release];
-	[masterController release];
+	[(NSObject*) masterController release];
     [super dealloc];
 }
 

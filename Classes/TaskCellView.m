@@ -96,6 +96,7 @@
 		[task release];
 		task = [aTask retain];
 	}
+    self.accessibilityLabel = task.name;
 	[self setNeedsDisplay];
 	[self updateButtonState];
 }

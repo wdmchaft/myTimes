@@ -1,0 +1,46 @@
+8
+
+dir
+18
+http://192.168.178.21/svn/cpp/iphone/mytimes/trunk/TaskTracker/Settings.bundle
+http://192.168.178.21/svn
+
+
+
+2009-09-09T19:07:06.095398Z
+18
+michael
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+ba7066c7-91b2-4c8c-a3b7-822d378d308e
+
+Root.plist
+file
+22
+
+
+
+2010-01-29T17:19:57.000000Z
+208c850d5c5da5dfb46046f6b4e53032
+2010-02-14T17:16:18.518041Z
+22
+michael
+
+de.lproj
+dir
+
+en.lproj
+dir
+

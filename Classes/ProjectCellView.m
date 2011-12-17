@@ -56,6 +56,7 @@
 	if (project != aProject) {
 		[project release];
 		project = [aProject retain];
+        self.accessibilityLabel = project.name;
 	}
 	[self setNeedsDisplay];
 	[self updateButtonState];

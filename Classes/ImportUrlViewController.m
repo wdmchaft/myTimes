@@ -14,7 +14,7 @@
 
 
 - (IBAction)cancel:(id)sender {
-	[self.parentViewController dismissModalViewControllerAnimated:TRUE];
+    [self dismissModalViewControllerAnimated:TRUE];
 }
 
 //import project data from URL and just remove the old projects

@@ -14,6 +14,6 @@
 	Project* project;
 }
 
-@property (retain) Project* project;
+@property (nonatomic, retain) Project* project;
 
 @end

@@ -278,7 +278,8 @@ NSInteger dateSortDescending(NSDate* d0, NSDate* d1, void *context) {
 	WorkUnitCell* cell = (WorkUnitCell*)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
 	if (cell == nil) {
 		CGRect startingRect = CGRectMake(0.0, 0.0, 320.0, ROW_HEIGHT);
-		cell = [[[WorkUnitCell alloc] initWithFrame:startingRect reuseIdentifier:CellIdentifier] autorelease];
+		cell = [[[WorkUnitCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        cell.frame = startingRect;
 	}
 
 	//set the project task element in the cell view

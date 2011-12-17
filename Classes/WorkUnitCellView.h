@@ -22,7 +22,8 @@
 	UIActivityIndicatorView* actIndicator;
 }
 
-@property (retain) TimeWorkUnit* workUnit;
+
+@property (nonatomic, retain, setter=setWorkUnit:) TimeWorkUnit* workUnit;
 @property (retain) UIButton* startStopButton;
 @property (retain) 	UIActivityIndicatorView* actIndicator;
 

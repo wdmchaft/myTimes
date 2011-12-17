@@ -116,11 +116,11 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
 	if (cell == nil) {
-		cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier] autorelease];
+		cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
 	}
     
     Project* p = [appDelegate.data objectAtIndex:indexPath.row];
-	cell.text = p.name;
+	cell.textLabel.text = p.name;
 	
     return cell;
 }

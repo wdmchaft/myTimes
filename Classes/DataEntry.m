@@ -20,7 +20,7 @@
 
 //default constructor
 - (DataEntry*) init {
-	if (self = [super self]) {
+	if ((self = [super self])) {
 		self.name = @"";
 		self.displayText = @"";
 		self.sortIndex = 0;

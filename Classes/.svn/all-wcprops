@@ -1,0 +1,533 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/22/cpp/iphone/mytimes/trunk/TaskTracker/Classes
+END
+ProjectSelectionTableViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/ProjectSelectionTableViewController.m
+END
+NSDataAddition.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/22/cpp/iphone/mytimes/trunk/TaskTracker/Classes/NSDataAddition.h
+END
+DataEntry.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/22/cpp/iphone/mytimes/trunk/TaskTracker/Classes/DataEntry.h
+END
+ProjectSelectionTableViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/ProjectSelectionTableViewController.h
+END
+ExportSettingsViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/ExportSettingsViewController.m
+END
+BeginEndEditViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/22/cpp/iphone/mytimes/trunk/TaskTracker/Classes/BeginEndEditViewController.m
+END
+AbstractTableCell.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/AbstractTableCell.h
+END
+TimeEntryViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/TimeEntryViewController.h
+END
+WorkUnitsListViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/19/cpp/iphone/mytimes/trunk/TaskTracker/Classes/WorkUnitsListViewController.m
+END
+ProjectTaskEditViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/ProjectTaskEditViewController.m
+END
+AbstractTableCellView.m
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/AbstractTableCellView.m
+END
+WorkUnit.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/WorkUnit.h
+END
+AbstractTableCellView.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/AbstractTableCellView.h
+END
+TimeUtilsTest.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/TimeUtilsTest.m
+END
+IAddItem.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/IAddItem.h
+END
+TextEditViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/22/cpp/iphone/mytimes/trunk/TaskTracker/Classes/TextEditViewController.m
+END
+ProjectEditViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/22/cpp/iphone/mytimes/trunk/TaskTracker/Classes/ProjectEditViewController.m
+END
+ProjectTaskEditViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/ProjectTaskEditViewController.h
+END
+AbstractTableCell.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/AbstractTableCell.m
+END
+TimerPickerViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/TimerPickerViewController.h
+END
+AppInfoViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/19/cpp/iphone/mytimes/trunk/TaskTracker/Classes/AppInfoViewController.m
+END
+PauseEditViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/PauseEditViewController.m
+END
+TaskCell.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/TaskCell.h
+END
+CsvExportHelper.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/CsvExportHelper.h
+END
+DatePickerViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/DatePickerViewController.m
+END
+CsvExportHelper.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/CsvExportHelper.m
+END
+ProjectDetailsViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/ProjectDetailsViewController.h
+END
+DatePickerViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/DatePickerViewController.h
+END
+ProjectTaskEditTableViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/ProjectTaskEditTableViewController.h
+END
+WorkUnitsListViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/WorkUnitsListViewController.h
+END
+XMLHelper.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/22/cpp/iphone/mytimes/trunk/TaskTracker/Classes/XMLHelper.m
+END
+BeginEndEditViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/22/cpp/iphone/mytimes/trunk/TaskTracker/Classes/BeginEndEditViewController.h
+END
+ExportSettingsViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/ExportSettingsViewController.h
+END
+TaskTrackerAppDelegate.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/22/cpp/iphone/mytimes/trunk/TaskTracker/Classes/TaskTrackerAppDelegate.h
+END
+BeginEndEditTableViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/22/cpp/iphone/mytimes/trunk/TaskTracker/Classes/BeginEndEditTableViewController.m
+END
+ProjectCell.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/ProjectCell.h
+END
+PauseEditTableViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/PauseEditTableViewController.h
+END
+TimePickerViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/TimePickerViewController.m
+END
+ProjectEditViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/ProjectEditViewController.h
+END
+TableRowSelectionDelegate.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/TableRowSelectionDelegate.h
+END
+RootViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/RootViewController.h
+END
+ProjectDetailsViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/22/cpp/iphone/mytimes/trunk/TaskTracker/Classes/ProjectDetailsViewController.m
+END
+PauseEditViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/PauseEditViewController.h
+END
+ProjectCellView.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/ProjectCellView.m
+END
+TimePickerViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/TimePickerViewController.h
+END
+LedTextView.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/LedTextView.h
+END
+PauseEditTableViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/PauseEditTableViewController.m
+END
+TaskEditViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/22/cpp/iphone/mytimes/trunk/TaskTracker/Classes/TaskEditViewController.m
+END
+TaskCell.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/TaskCell.m
+END
+WorkUnitDetailsCellView.m
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/WorkUnitDetailsCellView.m
+END
+TaskTrackerAppDelegate.m
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/22/cpp/iphone/mytimes/trunk/TaskTracker/Classes/TaskTrackerAppDelegate.m
+END
+XmlParser.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/22/cpp/iphone/mytimes/trunk/TaskTracker/Classes/XmlParser.h
+END
+HelpViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/HelpViewController.h
+END
+XMLHelper.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/XMLHelper.h
+END
+EditController.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/EditController.h
+END
+TimeUtils.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/19/cpp/iphone/mytimes/trunk/TaskTracker/Classes/TimeUtils.m
+END
+TextEditViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/TextEditViewController.h
+END
+WorkUnitEditViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/WorkUnitEditViewController.h
+END
+TimeUtils.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/19/cpp/iphone/mytimes/trunk/TaskTracker/Classes/TimeUtils.h
+END
+WorkUnit.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/22/cpp/iphone/mytimes/trunk/TaskTracker/Classes/WorkUnit.m
+END
+WorkUnitDetailsTableViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/22/cpp/iphone/mytimes/trunk/TaskTracker/Classes/WorkUnitDetailsTableViewController.m
+END
+ProjectCellView.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/ProjectCellView.h
+END
+TaskCellView.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/19/cpp/iphone/mytimes/trunk/TaskTracker/Classes/TaskCellView.m
+END
+TimerPickerViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/TimerPickerViewController.m
+END
+WorkUnitCellView.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/WorkUnitCellView.h
+END
+Project.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/22/cpp/iphone/mytimes/trunk/TaskTracker/Classes/Project.h
+END
+RootViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/22/cpp/iphone/mytimes/trunk/TaskTracker/Classes/RootViewController.m
+END
+TimeEntryViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/TimeEntryViewController.m
+END
+WorkUnitCellView.m
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/19/cpp/iphone/mytimes/trunk/TaskTracker/Classes/WorkUnitCellView.m
+END
+ProjectTask.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/22/cpp/iphone/mytimes/trunk/TaskTracker/Classes/ProjectTask.m
+END
+BeginEndEditTableViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/22/cpp/iphone/mytimes/trunk/TaskTracker/Classes/BeginEndEditTableViewController.h
+END
+WorkUnitCell.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/WorkUnitCell.h
+END
+ProjectTaskEditTableViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/22/cpp/iphone/mytimes/trunk/TaskTracker/Classes/ProjectTaskEditTableViewController.m
+END
+WorkUnitEditViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/WorkUnitEditViewController.m
+END
+LedTextView.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/LedTextView.m
+END
+WorkUnitCell.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/WorkUnitCell.m
+END
+WorkUnitDetailsCellView.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/WorkUnitDetailsCellView.h
+END
+TaskEditViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/TaskEditViewController.h
+END
+ProjectTask.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/22/cpp/iphone/mytimes/trunk/TaskTracker/Classes/ProjectTask.h
+END
+Project.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/22/cpp/iphone/mytimes/trunk/TaskTracker/Classes/Project.m
+END
+ProjectCell.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/ProjectCell.m
+END
+WorkUnitDetailsTableViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/WorkUnitDetailsTableViewController.h
+END
+HelpViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/HelpViewController.m
+END
+NSDataAddition.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/22/cpp/iphone/mytimes/trunk/TaskTracker/Classes/NSDataAddition.m
+END
+XmlParser.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/22/cpp/iphone/mytimes/trunk/TaskTracker/Classes/XmlParser.m
+END
+TaskCellView.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/TaskCellView.h
+END
+AppInfoViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/18/cpp/iphone/mytimes/trunk/TaskTracker/Classes/AppInfoViewController.h
+END
+DataEntry.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/22/cpp/iphone/mytimes/trunk/TaskTracker/Classes/DataEntry.m
+END

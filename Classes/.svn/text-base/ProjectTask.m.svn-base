@@ -1,0 +1,118 @@
+//
+//  ProjectTask.m
+//  Test2
+//
+//  Created by Michael Anteboth on 09.01.09.
+//  Copyright 2009 __MyCompanyName__. All rights reserved.
+//
+
+#import "ProjectTask.h"
+#import "WorkUnit.h"
+#import "TaskTrackerAppDelegate.h"
+
+@implementation ProjectTask
+
+@synthesize name;
+@synthesize workUnits;
+@synthesize description;
+@synthesize markedForExport;
+@synthesize userChangeable;
+
+// writes ourselves out to an NSCoder
+- (void) encodeWithCoder: (NSCoder *)coder {
+	[coder encodeObject:name];
+	[coder encodeObject:workUnits];
+	[coder encodeObject:description];
+	[coder encodeObject:[NSNumber numberWithInt:userChangeable]];
+}
+
+// reads ourself back in from an NSCoder.
+- initWithCoder: (NSCoder *) coder {
+	[super init];
+	name = [[coder decodeObject] retain];
+	workUnits = [[coder decodeObject] retain];
+	
+	//sort workunits by date
+	[self sortWorkUnitsByDate:NO];
+	
+	description = [[coder decodeObject] retain];
+	
+	NSNumber* changeable = [[coder decodeObject] retain];
+	if (changeable != nil) {
+		userChangeable = [changeable boolValue];
+	} else {
+		userChangeable = TRUE; //user default value
+	}
+	
+
+	return self;
+}
+
+-(void) sortWorkUnitsByDate: (BOOL)ascending {
+	NSSortDescriptor *dateSorter = [[NSSortDescriptor alloc] initWithKey:@"date" ascending:ascending];
+	[workUnits sortUsingDescriptors:[NSArray arrayWithObject:dateSorter]];
+	[dateSorter release];
+}
+
+- (ProjectTask*) init {
+	if (self = [super init]) {
+		self.name = @"Name";
+		self.workUnits = [[NSMutableArray alloc] init];
+		self.description = @"";
+		self.userChangeable = TRUE;
+	}
+	return self;
+}
+
+-(NSString*) formatSeconds:(float)timeInSecs {	
+	const int secsPerMin = 60;
+	const int secsPerHour = secsPerMin * 60;
+	const char *timeSep = ":"; //@TODO localise...
+	const char *hrsName = "h";
+	
+	float time = timeInSecs;
+	int hrs = time/secsPerHour;
+	
+	time -= hrs*secsPerHour;
+	int mins = time/secsPerMin;
+	//time -= mins*secsPerMin;
+	
+	return [NSString stringWithFormat:@"%d%s%02d %s", hrs, timeSep, mins, hrsName];
+}
+
+- (NSNumber*) totalAmmount {
+	float sum = 0;
+	for ( WorkUnit* w in self.workUnits) {
+		sum = sum + [w.duration floatValue];
+	}
+	return [NSNumber numberWithFloat:sum];
+}
+
+-(NSString*) summary {
+	NSString* duration = [self formatSeconds:[[self totalAmmount] floatValue]];
+	NSString* s = [NSString stringWithFormat:@"%@", duration];
+	return s;
+}
+
+//returns true if there is a workUnit which is running, false else
+-(BOOL) hasRunningWorkUnits {
+	for (WorkUnit* wu in self.workUnits) {
+		if(wu.running) return TRUE;
+	}
+	return FALSE;
+}
+
+//returns a sorted array of this tasks work units. sorted by start date-time descending (from new to old)
+-(NSArray*) getWorkUnitsSorted {
+	NSArray* sorted = [self.workUnits sortedArrayUsingSelector:@selector(compareByStartDate:)];
+	return sorted;
+}
+
+- (void) dealloc {
+	[name release];
+	[workUnits release];
+	[description release];
+	[super dealloc]; 
+} 
+
+@end

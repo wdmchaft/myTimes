@@ -17,7 +17,7 @@
 	UIActivityIndicatorView* actIndicator;
 }
 
-@property (retain) Project* project;
+@property (nonatomic, retain, setter = setProject:) Project* project;
 @property (retain) 	UIActivityIndicatorView* actIndicator;
 
 @end
